@@ -1,0 +1,14 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=Encyclopedia.chm
+Contents file=Encyclopedia.hhc
+Default Window=a
+Default topic=_cover.html
+Display compile progress=No
+Full-text search=Yes
+Language=0x404 中文 (繁體，台灣)
+Title=Notes
+
+[WINDOWS]
+a=,"Encyclopedia.hhc",,"_cover.html",,,,,,0x23521,,0x3006,,,,,1,,,0
+        

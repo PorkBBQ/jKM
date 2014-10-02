@@ -1,0 +1,1118 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">R vs Python
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">R vs Python</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">R vs Python</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">HDFS</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>vector (array)</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>create</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					v &lt;- c(1,2,3,4,5)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1] 1 2 3 4 5</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					python:
+				</td>
+				<td class="v">
+					v = np.array([1,2,3,4,5])
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([1, 2, 3, 4, 5])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>sequence</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					seq(1,5,2)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1] 1 3 5</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					python:
+				</td>
+				<td class="v">
+					np.array(range(1,6,2))
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([1, 3, 5])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>linspace</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					seq(0,10,length=5)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1]  0.0  2.5  5.0  7.5 10.0</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					python:
+				</td>
+				<td class="v">
+					np.linspace(0,10,5)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([  0. ,   2.5,   5. ,   7.5,  10. ])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>filter</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					v[v>2]
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1] 3 4 5</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					python:
+				</td>
+				<td class="v">
+					v[v>2]
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([3, 4, 5])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>matrix (2D array)</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>create</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					m &lt;- c(1,2,3,4,5,6,7,8,9,10,11,12)
+<br />dim(m) &lt;- c(3,4)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">     [,1] [,2] [,3] [,4]<br />[1,]    1    4    7   10<br />[2,]    2    5    8   11<br />[3,]    3    6    9   12</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m=np.array([[1,4,7,10],[2,5,8,11],[3,6,9,12]])
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 1,  4,  7, 10],<br />       [ 2,  5,  8, 11],<br />       [ 3,  6,  9, 12]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dim (reshape)</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					m &lt;- 1:12
+<br />dim(m) &lt;- c(3,4)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">     [,1] [,2] [,3] [,4]<br />[1,]    1    4    7   10<br />[2,]    2    5    8   11<br />[3,]    3    6    9   12</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Python</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					m=np.array(range(1,13))
+m.reshape([3,4], order='F')
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 1,  4,  7, 10],<br />       [ 2,  5,  8, 11],<br />       [ 3,  6,  9, 12]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>slice</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					m[1:2,2:4]
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">     [,1] [,2] [,3]<br />[1,]    4    7   10<br />[2,]    5    8   11</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m[:2,1:]
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[2, 3, 4],<br />       [6, 7, 8]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>sum</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					apply(m, FUN=sum, MARGIN=2)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1]  6 15 24 33</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m.sum(axis=0)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([ 6, 15, 24, 33])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>cumsum</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					apply(m, FUN=cumsum, MARGIN=2)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">     [,1] [,2] [,3] [,4]<br />[1,]    1    4    7   10<br />[2,]    3    9   15   21<br />[3,]    6   15   24   33</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m.cumsum(axis=0)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 1,  4,  7, 10],<br />       [ 3,  9, 15, 21],<br />       [ 6, 15, 24, 33]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>linear alebra</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>create</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					m &lt;- runif(9)
+<br />dim(m) &lt;- c(3,3)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">          [,1]      [,2]       [,3]<br />[1,] 0.9347052 0.1255551 0.01339033<br />[2,] 0.2121425 0.2672207 0.38238796<br />[3,] 0.6516738 0.3861141 0.86969085</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m=rand(3,3)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 0.9347052 ,  0.1255551 ,  0.01339033],<br />       [ 0.2121425 ,  0.2672207 ,  0.38238796],<br />       [ 0.6516738 ,  0.3861141 ,  0.86969085]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>transform</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					t(m)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">          [,1]      [,2]      [,3]<br />[1,] 0.93470523 0.2121425 0.6516738<br />[2,] 0.12555510 0.2672207 0.3861141<br />[3,] 0.01339033 0.3823880 0.8696908</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m.T
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 0.9347052 ,  0.2121425 ,  0.6516738 ],<br />       [ 0.1255551 ,  0.2672207 ,  0.3861141 ],<br />       [ 0.01339033,  0.38238796,  0.86969085]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>inverse</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					solve(m)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">           [,1]      [,2]      [,3]<br />[1,]  0.9842795 -1.208068  0.516012<br />[2,]  0.7513129  9.339222 -4.117861<br />[3,] -1.0710951 -3.241081  2.591372</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					inv(m)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 0.98427946, -1.20806801,  0.51601191],<br />       [ 0.7513131 ,  9.33921908, -4.11786011],<br />       [-1.07109522, -3.24108032,  2.59137188]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>product</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					m%*%m
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">          [,1]      [,2]       [,3]<br />[1,] 0.9090356 0.1560781 0.07217222<br />[2,] 0.5041718 0.2456878 0.43758193<br />[3,] 1.2577888 0.5207985 0.91273368</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m.dot(m)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([[ 0.90903551,  0.15607812,  0.07217222],<br />       [ 0.50417178,  0.24568786,  0.43758195],<br />       [ 1.25778884,  0.52079855,  0.91273368]])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>diagonal</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					diag(m)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1] 0.9347052 0.2672207 0.8696908</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					m.diagonal()
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([ 0.9347052 ,  0.2672207 ,  0.86969085])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dataframe</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>create</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					df &lt;- data.frame(c(1,2,3), c(4,5,6))
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">  c.1..2..3. c.4..5..6.<br />1          1          4<br />2          2          5<br />3          3          6</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					df = pd.DataFrame([[1,4],[2,5],[3,6]])
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">   0  1<br />0  1  4<br />1  2  5<br />2  3  6</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>colnames (columns)</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					colnames(df) &lt;- c('c1', 'c2')
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">  c1 c2<br />1  1  4<br />2  2  5<br />3  3  6</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					df.columns=['c1', 'c2']
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">   c1  c2<br />0   1   4<br />1   2   5<br />2   3   6</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>random</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>uniform</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					runif(5,min=0,max=10)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1] 7.942399 1.079436 7.237109 4.112744 8.209463</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					np.random.uniform(low=0, high=10,size=5)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([ 3.69523969,  0.40464743,  4.13240036,  0.32573687,  5.40994072])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>normal</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					rnorm(5, mean=0, sd=1)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">[1]  0.37739565  0.13333636  0.80418951 -0.05710677  0.50360797</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					np.random.normal(loc=0,scale=1, size=5)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([ 0.66445613, -1.62886186, -0.4706704 ,  1.72912386,  0.57497886])</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>poisson</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					R:
+				</td>
+				<td class="v">
+					rpois(10, lambda=5)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD"> [1] 7 4 3 2 2 4 5 6 4 8</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Python:
+				</td>
+				<td class="v">
+					np.random.poisson(lam=5, size=10)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">array([3, 5, 3, 6, 5, 7, 9, 5, 7, 4])</div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

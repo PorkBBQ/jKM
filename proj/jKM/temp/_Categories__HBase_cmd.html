@@ -1,0 +1,909 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">HBase_cmd
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">frequently used hbase commands</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">frequently used hbase commands</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">HBase</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">commands</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					Enviroment:
+				</td>
+				<td class="v">
+					redhat
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					jdk:
+				</td>
+				<td class="v">
+					version:1.7.0
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					hadoop:
+				</td>
+				<td class="v">
+					version:1.2.1
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					hbase:
+				</td>
+				<td class="v">
+					0.94.12
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>path</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					hadoop:
+				</td>
+				<td class="v">
+					/opt/hadoop-1.2.1
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					hbase:
+				</td>
+				<td class="v">
+					/opt/hbase-0.94.12
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Commands</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>start</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					/opt/hadoop-1.2.1/bin/start-all.sh
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/start-hbase.sh
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>stop</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/stop-hbase.sh
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>shell</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/hbase shell
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>exit shell</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					exit
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>list</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					list
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>create</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					create 't1', 'f1', 'f2'
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">建立table1, 包含2個column family f1, f2</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>disable</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					disable 't1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>enable</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					enable 't1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>drop</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					drop 't1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>put</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					put 't1', 'r1', 'f1:a', 'value1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>scan</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					scan 't1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>get</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					get 'table'1, 'r1', 'f1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>count</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					count 't1'
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">count row的數量</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>delete</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					delete 't1', 'r1', 'f1'
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">刪除一個column family</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>deleteall</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					deleteall 't1', 'r1'
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">刪除整個row</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>truncate</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					truncate 't1'
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">清空整個table</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					output:
+				</td>
+				<td class="v">
+					Truncating 't1' table (it may take a while):
+<br /> - Disabling table...
+<br /> - Dropping table...
+<br /> - Creating table...
+<br />0 row(s) in 4.1780 seconds
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>describe</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					describe 't1'
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">傳回table schema</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					output:
+				</td>
+				<td class="v">
+					{NAME => 'test', FAMILIES => [{NAME => 'f1', REPLICATION_SCOPE => '0', KEEP_DELETED_CELLS => 'false',ENCODE_ON_DISK => 'true', COMPRESSION => 'NONE', BLOCKCACHE => 'true', MIN_VERSIONS => '0', DATA_BLOCK_ENCODING => 'NONE', IN_MEMORY => 'false', BLOOMFILTER => 'NONE', TTL => '2147483647', VERSIONS => '3', BLOCKSIZE => '65536'}, {NAME => 'f2', REPLICATION_SCOPE => '0', KEEP_DELETED_CELLS => 'false', ENCODE_ON_DISK => 'true', COMPRESSION => 'NONE', BLOCKCACHE => 'true', MIN_VERSIONS => '0', DATA_BLOCK_ENCODING => 'NONE', IN_MEMORY => 'false', BLOOMFILTER => 'NONE', TTL => '2147483647', VERSIONS => '3', BLOCKSIZE => '65536'}, {NAME => 'f3', REPLICATION_SCOPE => '0', KEEP_DELETED_CELLS => 'false', ENCODE_ON_DISK => 'true', COMPRESSION => 'NONE', BLOCKCACHE => 'true', MIN_VERSIONS => '0', DATA_BLOCK_ENCODING=> 'NONE', IN_MEMORY => 'false', BLOOMFILTER => 'NONE', TTL => '2147483647', VERSIONS => '3', BLOCKSIZE => '65536'}]}
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>status</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					status
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					output:
+				</td>
+				<td class="v">
+					2 servers, 0 dead, 5.5000 average load
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>version</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					version
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>exists</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					exists 't1'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

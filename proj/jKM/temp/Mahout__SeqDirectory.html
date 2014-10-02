@@ -1,0 +1,765 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">SeqDirectory
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;imcompelete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Converting directory of documents to SequenceFile format</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Converting directory of documents to SequenceFile format</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">imcompelete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">Mahout</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					Process:
+				</td>
+				<td class="v">
+					Variable
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Preparation</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					mkdir -p $DL/dir
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					cd $DL/dir
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>basic</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					mkdir dir_a dir_b dir_c
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					echo -e "aa 1 1\naa 1 2\naa 1 3" > dir_a/1
+<br />echo -e "aa 2 1\naa 2 2\naa 2 3" > dir_a/2
+<br />echo -e "aa 3 1\naa 3 2\naa 3 3" > dir_a/3
+<br />
+<br />echo -e "b 1 1\nb 1 2\nb 1 3" > dir_b/1
+<br />echo -e "b 2 1\nb 2 2\nb 2 3" > dir_b/2
+<br />echo -e "b 3 1\nb 3 2\nb 3 3" > dir_b/3
+<br />
+<br />echo -e "c 1 1\nc 1 2\nc 1 3" > dir_c/1
+<br />echo -e "c 2 1\nc 2 2\nc 2 3" > dir_c/2
+<br />echo -e "c 3 1\nc 3 2\nc 3 3" > dir_c/3
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					cat */* 
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">aa 1 1<br />aa 1 2<br />aa 1 3<br />aa 2 1<br />aa 2 2<br />aa 2 3<br />aa 3 1<br />aa 3 2<br />aa 3 3<br />b 1 1<br />b 1 2<br />b 1 3<br />b 2 1<br />b 2 2<br />b 2 3<br />b 3 1<br />b 3 2<br />b 3 3<br />c 1 1<br />c 1 2<br />c 1 3<br />c 2 1<br />c 2 2<br />c 2 3<br />c 3 1<br />c 3 2<br />c 3 3</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>random with python</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					mkdir dir_0 dir_1 dir_2 dir_3 dir_4
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					python
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					import random
+<br />env={
+<br />    'dir':'dir'
+<br />    , 'numGroup':5
+<br />    , 'numConfounder':5
+<br />    , 'numFile':100
+<br />}
+<br />for i in range(env['numGroup']):
+<br />    for j in range(env['numFile']):
+<br />        f = file('dir_%d/%d' %(i, j),'w')
+<br />        rand=random.randint(0,env['numConfounder']-1)
+<br />        #print('echo "%s %d" >> dir_%s/%d' %(i, rand, i, j))
+<br />        f.write("%s %d\n"%(i, rand))
+<br />        f.close()
+<br />
+<br />
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					quit()
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					cat */* 
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">0 4<br />0 5<br />0 4<br />0 2<br />0 2</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop fs -mkdir -p $DH
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop fs -put $DL/dir $DH
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -ls $DH/dir/*
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">Found 3 items<br />-rw-r--r--   1 root hadoop         21 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_a/1<br />-rw-r--r--   1 root hadoop         21 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_a/2<br />-rw-r--r--   1 root hadoop         21 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_a/3<br />Found 3 items<br />-rw-r--r--   1 root hadoop         18 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_b/1<br />-rw-r--r--   1 root hadoop         18 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_b/2<br />-rw-r--r--   1 root hadoop         18 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_b/3<br />Found 3 items<br />-rw-r--r--   1 root hadoop         18 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_c/1<br />-rw-r--r--   1 root hadoop         18 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_c/2<br />-rw-r--r--   1 root hadoop         18 2014-09-26 11:06 /data/mahout/seqdirectory/dir/dir_c/3</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -cat $DL/dir/dir_*/*
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">aa 1 1<br />aa 1 2<br />aa 1 3<br />aa 2 1<br />aa 2 2<br />aa 2 3<br />aa 3 1<br />aa 3 2<br />aa 3 3<br />b 1 1<br />b 1 2<br />b 1 3<br />b 2 1<br />b 2 2<br />b 2 3<br />b 3 1<br />b 3 2<br />b 3 3<br />c 1 1<br />c 1 2<br />c 1 3<br />c 2 1<br />c 2 2<br />c 2 3<br />c 3 1<br />c 3 2<br />c 3 3</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Mahout</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					mahout seqdirectory \
+<br />    -i $DH/dir \
+<br />    -o $DH/seq \
+<br />    -ow
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -text $DH/seq/*
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">/dir_a/1        aa 1 1<br />aa 1 2<br />aa 1 3<br /><br />/dir_a/2        aa 2 1<br />aa 2 2<br />aa 2 3<br /><br />/dir_a/3        aa 3 1<br />aa 3 2<br />aa 3 3<br /><br />/dir_b/1        b 1 1<br />b 1 2<br />b 1 3<br /><br />/dir_b/2        b 2 1<br />b 2 2<br />b 2 3<br /><br />/dir_b/3        b 3 1<br />b 3 2<br />b 3 3<br /><br />/dir_c/1        c 1 1<br />c 1 2<br />c 1 3<br /><br />/dir_c/2        c 2 1<br />c 2 2<br />c 2 3<br /><br />/dir_c/3        c 3 1<br />c 3 2<br />c 3 3<br /></div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Clean Up</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					rm -rI $DL
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -rm -r $DH
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Parameters</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					--input (-i) input
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">Path to job input directory.</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					--output (-o) output
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">The directory pathname for output.</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--overwrite (-ow)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">If present, overwrite the output directory before running job</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--method (-xm) method
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">The execution method to use: sequential or mapreduce. Default is mapreduce</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--chunkSize (-chunk) chunkSize
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">The chunkSize in MegaBytes. Defaults to 64</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--fileFilterClass (-filter) fFilterClass
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">The name of the class to use for file parsing. Default: org.apache.mahout.text.PrefixAdditionFilter</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--keyPrefix (-prefix) keyPrefix
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">The prefix to be prepended to the key</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--charset (-c) charset
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">The name of the character encoding of the input files. Default to UTF-8 {accepts: cp1252|ascii...}</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--help (-h)
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">Print out help</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--tempDir tempDir
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">Intermediate output directory</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--startPhase startPhase
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">First phase to run</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					--endPhase endPhase
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">Last phase to run</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Reference</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					Apache Mahout
+				</td>
+				<td class="v">
+					<a href="http://mahout.apache.org/users/basics/creating-vectors-from-text.html"></a>
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

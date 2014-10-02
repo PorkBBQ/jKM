@@ -1,0 +1,410 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">n_HCatalog
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Install Cloudera CDH 1 to 1 Cluster (MRv1) with repo - Hcatalog</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Install Cloudera CDH 1 to 1 Cluster (MRv1) with repo - Hcatalog</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">cloudera, CDH</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Hosts</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					master node:
+				</td>
+				<td class="v">
+					192.168.31.200 cdh00
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					worker node:
+				</td>
+				<td class="v">
+					192.168.31.201 cdh01
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>install package</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					yum search hadoop
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					yum clean all
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					yum install -y \
+<br />hive-hcatalog \
+<br />hive-webhcat \
+<br />hive-webhcat-server
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>hbase-site.xml</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					vi $HIVE_HOME/conf/hive-site.xml
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					edit :
+				</td>
+				<td class="v">
+					  &lt;property>
+<br />    &lt;name>hive.metastore.uris&lt;/name>
+<br />    &lt;value>thrift://cdh00:9083&lt;/value>
+<br />  &lt;/property>
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>start service</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					service webhcat-server start
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Test</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>hcat</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hcat -e "create table t1(c1 string)"
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hcat -e "desc t1"
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					http://192.168.31.200:50111/templeton/v1/ddl/database/default/table/t1?user.name=hive
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

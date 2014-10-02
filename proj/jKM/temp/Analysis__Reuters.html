@@ -1,0 +1,719 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">Reuters
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;imcomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Reuters data text analysis and clustering</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Reuters data text analysis and clustering</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">imcomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">Mahout, TF-IDF, Cluster</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Maven</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					 mvn -e -q exec:java \
+<br />-Dexec.mainClass="org.apache.lucene.benchmark.utils.ExtractReuters" \
+<br />-Dexec.args="/home/biadmin/josh/data/reuters21578/ /home/biadmin/josh/data/reuters-extracted/"
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">lucene</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Hadoop</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -put /home/biadmin/josh/data/reuters-extracted/ /user/biadmin/josh/data/reuters
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">hadoop put</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Mahout</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/mahout seqdirectory -c UTF8 \
+<br />-i /biginsights/hive/warehouse/josh_reuters.db/reuters \
+<br />-o /output/reuters/seq
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">mahout seqdirectory</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/mahout seq2sparse \
+<br />-i /output/reuters/seq \
+<br />-o /output/reuters/vectors \
+<br />-ow \
+<br />-a org.apache.lucene.analysis.core.WhitespaceAnalyzer \
+<br />-chunk 128 \
+<br />-wt tfidf \
+<br />-s 5 \
+<br />-md 3 \
+<br />-x 90 \
+<br />-ng 2 \
+<br />-ml 50 \
+<br />-seq \
+<br />-n 2
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">mahout seq2vector</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/mahout kmeans \
+<br />-i /output/reuters/vectors/tfidf-vectors \
+<br />-c /output/reuters/reuters-initial-clusters \
+<br />-o /output/reuters/reuters-kmeans-clusters \
+<br />-dm org.apache.mahout.common.distance.SquaredEuclideanDistanceMeasure \
+<br />-cd 1.0 \
+<br />-k 20 \
+<br />-x 20 \
+<br />-cl
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">mahout kmeans</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					bin/mahout clusterdump \
+<br />-dt sequencefile \
+<br />-i /output/reuters/reuters-kmeans-clusters/clusters-1-final
+<br />-o /home/biadmin/josh/data/dumper
+<br />-n 10
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">mahout clusterdump</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Hive</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					CREATE TABLE dumper_stage(line string)
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					LOAD DATA LOCAL INPATH '/home/biadmin/josh/data/dumper'
+<br />OVERWRITE INTO TABLE dumper
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					CREATE TABLE dumper
+<br />AS
+<br />SELECT substr(line, 0, instr(line, '{')-1) cluster_id
+<br />  , str_to_map(substr(line, instr(line, '[')+1, length(line)- instr(line, '[')-2), ', ',':') points
+<br />FROM dumper_stage 
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					CREATE TABLE dumper_unpvt
+<br />AS
+<br />SELECT cluster_id, cast(article_id as int) article_id, cast(distance as float) distance
+<br />FROM dumper
+<br />LATERAL VIEW explode(points) exploded_table as article_id, distance
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>MySQL</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					CREATE TABLE kmeans(cluster_id varchar(100), article_id int, distance float)
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Sqoop</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					$SQOOP_HOME/bin/sqoop export \
+<br />--connect jdbc:mysql://10.24.100.136/josh_reuters \
+<br />--username root \
+<br />--table kmeans \
+<br />--export-dir /biginsights/hive/warehouse/josh_reuters.db/dumper_unpvt/ \
+<br />--fields-terminated-by '\001'
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Python</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					# === MySQL ===
+<br />print('=== MySQL ===')
+<br />import proj.jData as jData
+<br />mysql= jData.getMySQL(db='josh_reuters')
+<br />
+<br />sql='''
+<br />SELECT cluster_id, count(*), AVG(distance)
+<br />FROM kmeans
+<br />GROUP BY cluster_id
+<br />ORDER BY cluster_id
+<br />;
+<br />'''
+<br />mysql.execute(sql)
+<br />
+<br />for row in mysql:
+<br />    print(row)
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Extra</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>HIVE</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -text /output/reuters/vectors/dictionary.file-0 >> josh/data/reuters_dictionary
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -text /output/reuters/vectors/frequency.file-0 >> josh/data/reuters_dictionary_frequency
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					hadoop fs -text /output/reuters/vectors/wordcount/ngrams/part-r-00000 >> josh/data/reuters_dictionary_wc
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					create table dictionary(term string, id int)
+<br />row format delimited
+<br />fields terminated by '\t'
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					load data local inpath '/home/biadmin/josh/data/reuter_dictionary'
+<br />overwrite into table dictionary
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					create table dictionary_frequency(id int, count int)
+<br />row format delimited
+<br />fields terminated by '\t'
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					load data local inpath '/home/biadmin/josh/data/reuter_dictionary_frequency'
+<br />overwrite into table dictionary_frequency
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					create table dictionary_wc(term string, wc float)
+<br />row format delimited
+<br />fields terminated by '\t'
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					load data local inpath '/home/biadmin/josh/data/reuters_dictionary_wc'
+<br />overwrite into table dictionary_wc
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					v
+				</td>
+				<td class="v">
+					CREATE TABLE wordcount
+<br />AS
+<br />SELECT a.id, a.term, b.count, c.wc idf
+<br />FROM dictionary a
+<br />JOIN dictionary_frequency b
+<br />ON a.id=b.id
+<br />JOIN dictionary_wc c
+<br />on a.term=c.term
+<br />;
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

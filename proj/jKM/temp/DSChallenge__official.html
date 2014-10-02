@@ -1,0 +1,342 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">official
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Data Scientist Challenge01 official solution</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Data Scientist Challenge01 official solution</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">DSC</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>exploring_01</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-D mapred.job.name='dsc01_o1_01' \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_o1_01 \
+<br />-file /home/biadmin/josh/dsc01_script/exploring/summary_map_edit2.py \
+<br />-mapper /home/biadmin/josh/dsc01_script/exploring/summary_map_edit2.py \
+<br />-reducer "uniq -c"
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD"> 351712 auth <br /> 157151 craetedAt <br /> 194561 createdAt <br /> 261161 created_at <br /> 609352 payload <br /> 351712 refId <br /> 351712 sessionID <br /> 261161 session_id <br /> 612873 type <br /> 612873 user <br /> 351712 userAgent <br /> 261161 user_agent </div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>exploring_04</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-D mapred.job.name='dsc01_o1_04' \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_o1_04 \
+<br />-file /home/biadmin/josh/dsc01_script/exploring/summary_map_edit4.py \
+<br />-mapper /home/biadmin/josh/dsc01_script/exploring/summary_map_edit4.py \
+<br />-file /home/biadmin/josh/dsc01_script/exploring/summary_reduce.py \
+<br />-reducer /home/biadmin/josh/dsc01_script/exploring/summary_reduce.py
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">Account - 177 <br />Account:auth - identifier, count: 99 <br />Account:createdAt - min: 2013-05-06 08:02:56+00:00, max 2013-05-12 23:06:11-08:00, count: 177 <br />Account:payload - 177 <br />Account:payload:new - ['kid'], count: 134 <br />Account:payload:old - ['adult'], count: 134 <br />Account:payload:subAction - ['updatePassword', 'parentalControls', 'updatePaymentInfo'], count: 177 <br />Account:refId - identifier, count: 99 <br />Account:sessionID - identifier, count: 177 <br />Account:user - min: 1634306, max 99314647, average: 47623573.86, count: 177 <br />Account:userAgent - identifier, count: 177 <br />AddToQueue - 5091 <br />AddToQueue:auth - identifier, count: 2919 <br />AddToQueue:createdAt - min: 2013-05-06 08:00:32+00:00, max 2013-05-12 23:57:46-08:00, count: 5091 <br />AddToQueue:payload - 5091 <br />AddToQueue:payload:itemId - identifier, count: 5091 <br />AddToQueue:refId - identifier, count: 2919 <br />AddToQueue:sessionID - identifier, count: 5091 <br />AddToQueue:user - min: 1169676, max 99985450, average: 50609784.80, count: 5091 <br />AddToQueue:userAgent - identifier, count: 5091 <br />Advance - 3062 <br />Advance:createdAt - min: 2013-05-06 08:02:10+00:00, max 2013-05-09 07:27:37+00:00, count: 3062 <br />Advance:payload - 3062 <br />Advance:payload:itemId - identifier, count: 3062 <br />Advance:payload:marker - min: 0, max 8491, average: 2085.52, count: 3062 <br />Advance:sessionID - identifier, count: 3062 <br />Advance:user - min: 1091145, max 99856025, average: 51177856.67, count: 3062 <br />Advance:userAgent - identifier, count: 3062 <br />Home - 5425 <br />Home:auth - identifier, count: 3109 <br />Home:createdAt - min: 2013-05-06 08:00:08+00:00, max 2013-05-12 23:57:18-08:00, count: 5425 <br />Home:payload - 5425 <br />Home:payload:popular - identifier, count: 5425 <br />Home:payload:recent - identifier, count: 5425 <br />Home:payload:recommended - identifier, count: 5425 <br />Home:refId - identifier, count: 3109 <br />Home:sessionID - identifier, count: 5425 <br />Home:user - min: 1091145, max 99985450, average: 49984786.82, count: 5425 <br />Home:userAgent - identifier, count: 5425 <br />Hover - 19617 <br />Hover:auth - identifier, count: 11376 <br />Hover:createdAt - min: 2013-05-06 08:00:18+00:00, max 2013-05-12 23:58:08-08:00, count: 19617 <br />Hover:payload - 19617 <br />Hover:payload:itemId - identifier, count: 19617 <br />Hover:refId - identifier, count: 11376 <br />Hover:sessionID - identifier, count: 19617 <br />Hover:user - min: 1091145, max 99985450, average: 50158191.38, count: 19617 <br />Hover:userAgent - identifier, count: 19617 <br />ItemPage - 274 <br />ItemPage:auth - identifier, count: 154 <br />ItemPage:createdAt - min: 2013-05-06 08:02:15+00:00, max 2013-05-12 23:34:12-08:00, count: 274 <br />ItemPage:payload - 274 <br />ItemPage:payload:itemId - identifier, count: 274 <br />ItemPage:refId - identifier, count: 154 <br />ItemPage:sessionID - identifier, count: 274 <br />ItemPage:user - min: 1263067, max 99270605, average: 49770339.91, count: 274 <br />ItemPage:userAgent - identifier, count: 274 <br />Login - 1057 <br />Login:auth - identifier, count: 603 <br />Login:createdAt - min: 2013-05-06 08:01:42+00:00, max 2013-05-12 23:36:07-08:00, count: 1057 <br />Login:refId - identifier, count: 603 <br />Login:sessionID - identifier, count: 1057 <br />Login:user - min: 1091145, max 99856025, average: 49325068.51, count: 1057 <br />Login:userAgent - identifier, count: 1057 <br />Logout - 1018 <br />Logout:auth - identifier, count: 571 <br />Logout:createdAt - min: 2013-05-06 08:13:44+00:00, max 2013-05-12 23:59:15-08:00, count: 1018 <br />Logout:refId - identifier, count: 571 <br />Logout:sessionID - identifier, count: 1018 <br />Logout:user - min: 1091145, max 99985450, average: 48915219.96, count: 1018 <br />Logout:userAgent - identifier, count: 1018 <br />Pause - 4424 <br />Pause:auth - identifier, count: 2543 <br />Pause:createdAt - min: 2013-05-06 08:00:49+00:00, max 2013-05-12 23:57:22-08:00, count: 4424 <br />Pause:payload - 4424 <br />Pause:payload:itemId - identifier, count: 4424 <br />Pause:payload:marker - min: 1, max 7215, average: 2207.71, count: 4424 <br />Pause:refId - identifier, count: 2543 <br />Pause:sessionID - identifier, count: 4424 <br />Pause:user - min: 1091145, max 99985450, average: 50103317.24, count: 4424 <br />Pause:userAgent - identifier, count: 4424 <br />Play - 558568 <br />Play:auth - identifier, count: 323244 <br />Play:createdAt - min: 2013-05-06 08:00:01+00:00, max 2013-05-12 23:59:59-08:00, count: 558568 <br />Play:payload - 558568 <br />Play:payload:itemId - identifier, count: 543129 <br />Play:payload:marker - min: 0, max 8525, average: 2138.50, count: 543129 <br />Play:refId - identifier, count: 323244 <br />Play:sessionID - identifier, count: 558568 <br />Play:user - min: 1091145, max 99985450, average: 50192151.13, count: 558568 <br />Play:userAgent - identifier, count: 558568 <br />Position - 164 <br />Position:createdAt - min: 2013-05-06 08:25:34+00:00, max 2013-05-09 07:02:48+00:00, count: 164 <br />Position:payload - 164 <br />Position:payload:itemId - identifier, count: 164 <br />Position:payload:marker - min: 0, max 6690, average: 2358.18, count: 164 <br />Position:sessionID - identifier, count: 164 <br />Position:user - min: 1091145, max 99413523, average: 49317538.82, count: 164 <br />Position:userAgent - identifier, count: 164 <br />Queue - 1313 <br />Queue:auth - identifier, count: 735 <br />Queue:createdAt - min: 2013-05-06 08:01:21+00:00, max 2013-05-12 23:36:31-08:00, count: 1313 <br />Queue:refId - identifier, count: 735 <br />Queue:sessionID - identifier, count: 1313 <br />Queue:user - min: 1091145, max 99806989, average: 50424708.80, count: 1313 <br />Queue:userAgent - identifier, count: 1313 <br />Rate - 652 <br />Rate:auth - identifier, count: 387 <br />Rate:createdAt - min: 2013-05-06 08:03:32+00:00, max 2013-05-12 23:36:08-08:00, count: 652 <br />Rate:payload - 652 <br />Rate:payload:itemId - identifier, count: 652 <br />Rate:payload:rating - min: 1, max 5, average: 3.54, count: 652 <br />Rate:refId - identifier, count: 387 <br />Rate:sessionID - identifier, count: 652 <br />Rate:user - min: 1091145, max 99314647, average: 49635732.38, count: 652 <br />Rate:userAgent - identifier, count: 652 <br />Recommendations - 1344 <br />Recommendations:auth - identifier, count: 784 <br />Recommendations:createdAt - min: 2013-05-06 08:00:56+00:00, max 2013-05-12 23:58:00-08:00, count: 1344 <br />Recommendations:payload - 1344 <br />Recommendations:payload:recs - identifier, count: 1344 <br />Recommendations:refId - identifier, count: 784 <br />Recommendations:sessionID - identifier, count: 1344 <br />Recommendations:user - min: 1091145, max 99985450, average: 50165065.09, count: 1344 <br />Recommendations:userAgent - identifier, count: 1344 <br />Resume - 1774 <br />Resume:createdAt - min: 2013-05-06 08:02:04+00:00, max 2013-05-09 07:31:48+00:00, count: 1774 <br />Resume:payload - 1774 <br />Resume:payload:itemId - identifier, count: 1774 <br />Resume:payload:marker - min: 0, max 6917, average: 2250.60, count: 1774 <br />Resume:sessionID - identifier, count: 1774 <br />Resume:user - min: 1091145, max 99985450, average: 51027539.16, count: 1774 <br />Resume:userAgent - identifier, count: 1774 <br />Search - 1328 <br />Search:auth - identifier, count: 769 <br />Search:createdAt - min: 2013-05-06 08:02:11+00:00, max 2013-05-12 23:36:56-08:00, count: 1328 <br />Search:payload - 1328 <br />Search:payload:results - identifier, count: 1328 <br />Search:refId - identifier, count: 769 <br />Search:sessionID - identifier, count: 1328 <br />Search:user - min: 1170207, max 99976229, average: 50523812.45, count: 1328 <br />Search:userAgent - identifier, count: 1328 <br />Stop - 7178 <br />Stop:auth - identifier, count: 4187 <br />Stop:createdAt - min: 2013-05-06 08:04:10+00:00, max 2013-05-12 23:55:49-08:00, count: 7178 <br />Stop:payload - 7178 <br />Stop:payload:itemId - identifier, count: 7178 <br />Stop:payload:marker - min: 172, max 8233, average: 2692.93, count: 7178 <br />Stop:refId - identifier, count: 4187 <br />Stop:sessionID - identifier, count: 7178 <br />Stop:user - min: 1091145, max 99976229, average: 49769162.34, count: 7178 <br />Stop:userAgent - identifier, count: 7178 <br />VerifyPassword - 133 <br />VerifyPassword:auth - identifier, count: 78 <br />VerifyPassword:createdAt - min: 2013-05-06 10:02:24+00:00, max 2013-05-12 23:02:33-08:00, count: 133 <br />VerifyPassword:refId - identifier, count: 78 <br />VerifyPassword:sessionID - identifier, count: 133 <br />VerifyPassword:user - min: 1634306, max 99314647, average: 47262951.69, count: 133 <br />VerifyPassword:userAgent - identifier, count: 133 <br />WriteReview - 274 <br />WriteReview:auth - identifier, count: 154 <br />WriteReview:createdAt - min: 2013-05-06 08:11:46+00:00, max 2013-05-12 23:38:58-08:00, count: 274 <br />WriteReview:payload - 274 <br />WriteReview:payload:itemId - identifier, count: 274 <br />WriteReview:payload:length - min: 52, max 1192, average: 627.63, count: 274 <br />WriteReview:payload:rating - min: 1, max 5, average: 4.03, count: 274 <br />WriteReview:refId - identifier, count: 154 <br />WriteReview:sessionID - identifier, count: 274 <br />WriteReview:user - min: 1263067, max 99270605, average: 49770339.91, count: 274 <br />WriteReview:userAgent - identifier, count: 274 </div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>cleaning_01</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-D mapred.job.name='dsc01_o2_02' \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_o2_02 \
+<br />-file /home/biadmin/josh/dsc01_script/cleaning/clean_map_edit1.py \
+<br />-mapper /home/biadmin/josh/dsc01_script/cleaning/clean_map_edit1.py \
+<br />-file /home/biadmin/josh/dsc01_script/cleaning/clean_reduce.py \
+<br />-reducer /home/biadmin/josh/dsc01_script/cleaning/clean_reduce.py
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">{"session": "2b5846cb-9cbf-4f92-a1e7-b5349ff08662", "hover": ["16177", "10286", "8565", "10596", "29609", "13338"], "end": "1368189995", "played": {"16316": "4990"}, "browsed": [], "recommendations": ["13338", "10759", "39122", "26996", "10002", "25224", "6891", "16361", "7489", "16316", "12023", "25803", "4286e89", "1565", "20435", "10596", "29609", "14528", "6723", "35792e23", "25450", "10143e155", "10286", "25668", "37307"], "actions": ["login"], "reviewed": {}, "start": "1368189205", "recommended": ["8565", "10759", "10002", "25803", "10286"], "rated": {}, "user": "10108881", "searched": [], "popular": ["16177", "26365", "14969", "38420", "7097"], "kid": null, "queued": ["10286", "13338"], "recent": ["18392e39"]} <br />{"session": "f1e54234-9488-4447-ad16-c06dc0809adc", "hover": ["12022", "12022", "39122", "6723", "6723"], "end": "1368402926", "played": {"9107": "4605"}, "browsed": [], "recommendations": [], "actions": [], "reviewed": {}, "start": "1368398081", "recommended": ["18993", "23419", "25278", "6461e45", "6723"], "rated": {}, "user": "10108881", "searched": ["35642", "13144", "17324e67", "15616e216", "22660", "9107", "20129", "27873", "21368", "35752", "27446", "13153", "28121", "30411", "7307", "39501", "11652", "12239e1", "29078", "36948"], "popular": ["6334", "9692", "39122", "34805", "12022"], "kid": null, "queued": ["39122"], "recent": ["18392e39"]} <br />{"session": "c025f606-8d4a-4510-8133-88e7d465251e", "hover": ["34736e1", "38579"], "end": "1367924831", "played": {}, "browsed": ["9614"], "recommendations": [], "actions": [], "reviewed": {"9614": {"rating": "5", "length": "1022"}}, "start": "1367924545", "recommended": ["18569", "9614", "20188e1", "38579", "34736e1"], "rated": {}, "user": "10142325", "searched": [], "popular": ["20936", "35757", "31680", "9692", "18484"], "kid": null, "queued": ["38579"], "recent": ["30158e17"]} </div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>classification_01</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-D mapred.job.name='dsc01_o3_01' \
+<br />-input /tmp/dsc01_o2_02 \
+<br />-output /tmp/dsc01_o3_01 \
+<br />-file /home/biadmin/josh/dsc01_script/classification/kid_map.py \
+<br />-mapper /home/biadmin/josh/dsc01_script/classification/kid_map.py \
+<br />-file /home/biadmin/josh/dsc01_script/classification/kid_reduce.py \
+<br />-reducer /home/biadmin/josh/dsc01_script/classification/kid_reduce.py
+				</td>
+				<td class="r">
+					<div class="remark" style="background-color:#FFDDDD">10108881 9107,16316<br />10142325 9614<br />10151338a 34645<br />10151338k 38467,33449,26266<br />10240841 13993,39155,29536e3,29536e2,29536e1,8349e4,17542,15301,2528,19868,19699e4,19699e2,19699e3,19699e1,18569,22407,12276,16316,38088,39655<br />10344745 25276,19550,7194</div>
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>classification_02</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop fs -cat /tmp/dsc01_o3_01/part-\* | cut -f1 | grep a > /tmp/adults
+<br />tail -n +21 /tmp/adults | hadoop fs -put - /tmp/adults_train
+<br />head -20 /tmp/adults | hadoop fs -put - /tmo/adults_test
+<br />
+<br />hadoop fs -cat /tmp/dsc01_o3_01/part-\* | cut -f1 | grep k > /tmp/kids
+<br />tail -n +25 /tmp/kids | hadoop fs -put - /tmp/kid_train
+<br />head -24 /tmp/kids | hadoop fs -put - /tmp/kid_test
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

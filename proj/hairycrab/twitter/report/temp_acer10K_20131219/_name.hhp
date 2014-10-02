@@ -1,0 +1,8 @@
+[OPTIONS]
+    	Compatibility=1.1 or later
+    	Compiled file=_name.chm
+    	Contents file=_name.hhc
+    	Default topic=_cover.html
+    	Display compile progress=No
+    	Full-text search=Yes
+     Title=_name

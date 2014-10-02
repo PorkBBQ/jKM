@@ -1,0 +1,536 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">01c
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Data Scientist Challenge01 01c - with summary</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Data Scientist Challenge01 01c - with summary</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">DSC</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_01c.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					# -*- coding: utf-8 -*-
+<br />
+<br />import json
+<br />import collections
+<br />
+<br />datafile = open(r'D:\Josh\data\DSC01\heckle\web.log.2')
+<br />intermediate=[]
+<br />#-- map -----------------------------------------
+<br />jsons=[]
+<br />replaceList=[]
+<br />replaceList.append(['craetedAt', 'createdAt'])
+<br />replaceList.append(['created_at', 'createdAt'])
+<br />replaceList.append(['session_id', 'sessionID'])
+<br />replaceList.append(['user_agent', 'userAgent'])
+<br />
+<br />for _ in datafile.readlines():
+<br />    jsonStr=_.replace('""', '"')
+<br />    for _1, _2 in replaceList:
+<br />        jsonStr = jsonStr.replace(_1, _2)
+<br />    jsons.append(json.loads(jsonStr))
+<br />
+<br />for _1 in jsons:
+<br />    for _2, _3 in _1.items():
+<br />        typeStr=str(type(_3)).replace("&lt;type '", "").replace("'>", "")
+<br />        if typeStr == 'dict':
+<br />            for _4 in _3.keys():
+<br />                intermediate.append(_2+':'+typeStr+':'+str(_4))
+<br />        if typeStr in ['int', 'float']:
+<br />            intermediate.append(_2+':'+typeStr+':'+str(_3))
+<br />        else:
+<br />            intermediate.append(_2+':'+typeStr+':_total')
+<br />        
+<br />#-- /map -----------------------------------------
+<br />
+<br />
+<br />#-- reduce -----------------------------------------
+<br />
+<br />d = dict()
+<br />for line in intermediate:
+<br />    row = line.split(":", 3)
+<br />
+<br />    if row[1] in ['dict']:
+<br />        if row[0]+':'+row[1 ]+':'+row[2] not in d:
+<br />            d[row[0]+':'+row[1]+':'+row[2]]=1
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':'+row[2]]+=1
+<br />    elif row[1] in ['int']:
+<br />        if row[0]+':'+row[1]+':count' not in d:
+<br />            d[row[0]+':'+row[1]+':count']=1
+<br />            d[row[0]+':'+row[1]+':min']=int(row[2])
+<br />            d[row[0]+':'+row[1]+':max']=int(row[2])
+<br />            d[row[0]+':'+row[1]+':sum']=int(row[2])
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':count']+=1
+<br />            d[row[0]+':'+row[1]+':min']=min(d[row[0]+':'+row[1]+':min'], int(row[2]))
+<br />            d[row[0]+':'+row[1]+':max']=max(d[row[0]+':'+row[1]+':max'], int(row[2]))
+<br />            d[row[0]+':'+row[1]+':sum']+=int(row[2])
+<br />    elif row[1] in ['float']:
+<br />        if row[0]+':'+row[1]+':count' not in d:
+<br />            d[row[0]+':'+row[1]+':count']=1
+<br />            d[row[0]+':'+row[1]+':min']=float(row[2])
+<br />            d[row[0]+':'+row[1]+':max']=float(row[2])
+<br />            d[row[0]+':'+row[1]+':sum']=float(row[2])
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':count']+=1
+<br />            d[row[0]+':'+row[1]+':min']=min(d[row[0]+':'+row[1]+':min'], float(row[2]))
+<br />            d[row[0]+':'+row[1]+':max']=max(d[row[0]+':'+row[1]+':max'], float(row[2]))
+<br />            d[row[0]+':'+row[1]+':sum']+=float(row[2])
+<br />    else:
+<br />        if row[0]+':'+row[1]+':count' not in d:
+<br />            d[row[0]+':'+row[1]+':count']=1
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':count']+=1
+<br />
+<br />d2=dict()
+<br />for k, v in sorted(d.items()):
+<br />    row = k.split(":", 3)
+<br />    if row[0] not in d2: 
+<br />        d2[row[0]]=dict()
+<br />        d2[row[0]]['type']=row[1]
+<br />    d2[row[0]][row[2]]=v
+<br />
+<br />for k1, v1 in d2.items():
+<br />    print('\n'+k1 + ' (' + v1['type'] + '):')
+<br />    for k2, v2 in v1.items():
+<br />        if k2 == 'type':
+<br />            pass
+<br />        if k2 == 'sum':
+<br />            print('  '+'avg' + '=' + str(v1['sum']/v1['count']))
+<br />        else:
+<br />            print('  '+k2 + '=' + str(v2))
+<br />
+<br />#-- /reduce -----------------------------------------
+<br />
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_01c_map.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					#!/usr/bin/python
+<br />
+<br />import json
+<br />import sys
+<br />
+<br />jsons=[]
+<br />replaceList=[]
+<br />replaceList.append(['craetedAt', 'createdAt'])
+<br />replaceList.append(['created_at', 'createdAt'])
+<br />replaceList.append(['session_id', 'sessionID'])
+<br />replaceList.append(['user_agent', 'userAgent'])
+<br />
+<br />for _ in sys.stdin:
+<br />    jsonStr=_.replace('""', '"')
+<br />    for _1, _2 in replaceList:
+<br />        jsonStr = jsonStr.replace(_1, _2)
+<br />    jsons.append(json.loads(jsonStr))
+<br />    
+<br />for _1 in jsons:
+<br />    for _2, _3 in _1.items():
+<br />        typeStr=str(type(_3)).replace("&lt;type '", "").replace("'>", "")
+<br />        if typeStr == 'dict':
+<br />            for _4 in _3.keys():
+<br />                print(_2+':'+typeStr+':'+str(_4))
+<br />        if typeStr in ['int', 'float']:
+<br />            print(_2+':'+typeStr+':'+str(_3))
+<br />        else:
+<br />            print(_2+':'+typeStr+':_total')
+<br />
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_01c_reduce.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					#!/usr/bin/python
+<br />
+<br />import sys
+<br />
+<br />d = dict()
+<br />for line in sys.stdin:
+<br />    line = line.strip()
+<br />    row = line.split(":", 3)
+<br />
+<br />    if row[1] in ['dict']:
+<br />        if row[0]+':'+row[1 ]+':'+row[2] not in d:
+<br />            d[row[0]+':'+row[1]+':'+row[2]]=1
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':'+row[2]]+=1
+<br />    elif row[1] in ['int']:
+<br />        if row[0]+':'+row[1]+':count' not in d:
+<br />            d[row[0]+':'+row[1]+':count']=1
+<br />            d[row[0]+':'+row[1]+':min']=int(row[2])
+<br />            d[row[0]+':'+row[1]+':max']=int(row[2])
+<br />            d[row[0]+':'+row[1]+':sum']=int(row[2])
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':count']+=1
+<br />            d[row[0]+':'+row[1]+':min']=min(d[row[0]+':'+row[1]+':min'], int(row[2]))
+<br />            d[row[0]+':'+row[1]+':max']=max(d[row[0]+':'+row[1]+':max'], int(row[2]))
+<br />            d[row[0]+':'+row[1]+':sum']+=int(row[2])
+<br />    elif row[1] in ['float']:
+<br />        if row[0]+':'+row[1]+':count' not in d:
+<br />            d[row[0]+':'+row[1]+':count']=1
+<br />            d[row[0]+':'+row[1]+':min']=float(row[2])
+<br />            d[row[0]+':'+row[1]+':max']=float(row[2])
+<br />            d[row[0]+':'+row[1]+':sum']=float(row[2])
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':count']+=1
+<br />            d[row[0]+':'+row[1]+':min']=min(d[row[0]+':'+row[1]+':min'], float(row[2]))
+<br />            d[row[0]+':'+row[1]+':max']=max(d[row[0]+':'+row[1]+':max'], float(row[2]))
+<br />            d[row[0]+':'+row[1]+':sum']+=float(row[2])
+<br />    else:
+<br />        if row[0]+':'+row[1]+':count' not in d:
+<br />            d[row[0]+':'+row[1]+':count']=1
+<br />        else:
+<br />            d[row[0]+':'+row[1]+':count']+=1
+<br />
+<br />d2=dict()
+<br />for k, v in sorted(d.items()):
+<br />    row = k.split(":", 3)
+<br />    if row[0] not in d2: 
+<br />        d2[row[0]]=dict()
+<br />        d2[row[0]]['type']=row[1]
+<br />    d2[row[0]][row[2]]=v
+<br />
+<br />for k1, v1 in d2.items():
+<br />    print('\n'+k1 + ' (' + v1['type'] + '):')
+<br />    for k2, v2 in v1.items():
+<br />        if k2 == 'type':
+<br />            pass
+<br />        if k2 == 'sum':
+<br />            print('  '+'avg' + '=' + str(v1['sum']/v1['count']))
+<br />        else:
+<br />            print('  '+k2 + '=' + str(v2))
+<br />
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>streaming</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_01c \
+<br />-file /home/biadmin/josh/script/dsc01/dsc01_01c_map.py \
+<br />-mapper /home/biadmin/josh/script/dsc01/dsc01_01c_map.py \
+<br />-file /home/biadmin/josh/script/dsc01/dsc01_01c_reduce.py \
+<br />-reducer /home/biadmin/josh/script/dsc01/dsc01_01c_reduce.py \
+<br />-numReduceTasks 1
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>output</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					auth (unicode): 
+<br />  count=351712 
+<br />  type=unicode 
+<br /> 
+<br />payload (dict): 
+<br />  itemId=329525 
+<br />  _total=609352 
+<br />  subAction=177 
+<br />  old=134 
+<br />  rating=926 
+<br />  popular=5425 
+<br />  recommended=5425 
+<br />  results=1328 
+<br />  item_id=256114 
+<br />  length=274 
+<br />  recs=1344 
+<br />  marker=559731 
+<br />  new=134 
+<br />  type=dict 
+<br />  recent=5425 
+<br /> 
+<br />sessionID (unicode): 
+<br />  count=612873 
+<br />  type=unicode 
+<br /> 
+<br />user (int): 
+<br />  count=612873 
+<br />  max=99985450 
+<br />  avg=50189405 
+<br />  type=int 
+<br />  min=1091145 
+<br /> 
+<br />userAgent (unicode): 
+<br />  count=612873 
+<br />  type=unicode 
+<br /> 
+<br />type (unicode): 
+<br />  count=612873 
+<br />  type=unicode 
+<br /> 
+<br />refId (unicode): 
+<br />  count=351712 
+<br />  type=unicode 
+<br /> 
+<br />createdAt (unicode): 
+<br />  count=612873 
+<br />  type=unicode 
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

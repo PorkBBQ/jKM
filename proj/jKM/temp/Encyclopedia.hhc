@@ -1,0 +1,1296 @@
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+    <OBJECT TYPE="text/site properties">
+        <PARAM NAME="Window Styles" value="0x800025">
+        </PARAM>
+        <PARAM NAME="Font" VALUE="Arial Unicode MS,8,0">
+        </PARAM>
+    </OBJECT>
+        
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Encyclopedia">
+<param name="Local" value="_cover.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="API">
+<param name="Local" value="API.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="FileCopyWithProgress">
+<param name="Local" value="API__FileCopyWithProgress.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS">
+<param name="Local" value="API__HDFS.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS_FSDataInputStream_cat">
+<param name="Local" value="API__HDFS_FSDataInputStream_cat.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS_FileSystem_cat">
+<param name="Local" value="API__HDFS_FileSystem_cat.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS_URL_cat">
+<param name="Local" value="API__HDFS_URL_cat.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MapFile">
+<param name="Local" value="API__MapFile.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="SequenceFile">
+<param name="Local" value="API__SequenceFile.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Analysis">
+<param name="Local" value="Analysis.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Exception">
+<param name="Local" value="Analysis__Exception.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Jobs">
+<param name="Local" value="Analysis__Jobs.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Mahout programs">
+<param name="Local" value="Analysis__Mahout programs.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MovieLens_HBase">
+<param name="Local" value="Analysis__MovieLens_HBase.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MovieLens_MySQL">
+<param name="Local" value="Analysis__MovieLens_MySQL.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Reuters">
+<param name="Local" value="Analysis__Reuters.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="logisticRegression">
+<param name="Local" value="Analysis__logisticRegression.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="temp">
+<param name="Local" value="Analysis__temp.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Bash">
+<param name="Local" value="Bash.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="cut">
+<param name="Local" value="Bash__cut.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="BigInsights">
+<param name="Local" value="BigInsights.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Big SQL RCFile">
+<param name="Local" value="BigInsights__Big SQL RCFile.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="BigSql Hints">
+<param name="Local" value="BigInsights__BigSql Hints.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Biginsights Install Flow">
+<param name="Local" value="BigInsights__Biginsights Install Flow.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HBase Rest Port">
+<param name="Local" value="BigInsights__HBase Rest Port.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Install_Cluster">
+<param name="Local" value="BigInsights__Install_Cluster.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Install_Local">
+<param name="Local" value="BigInsights__Install_Local.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="JAQL">
+<param name="Local" value="BigInsights__JAQL.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Jaql Hbase">
+<param name="Local" value="BigInsights__Jaql Hbase.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Perl RegEx">
+<param name="Local" value="BigInsights__Perl RegEx.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Publish Java App">
+<param name="Local" value="BigInsights__Publish Java App.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Web Console REST">
+<param name="Local" value="BigInsights__Web Console REST.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="credstore">
+<param name="Local" value="BigInsights__credstore.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="CDH_121">
+<param name="Local" value="CDH_121.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="CDH_121">
+<param name="Local" value="CDH_121__CDH_121.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="a_Preparation">
+<param name="Local" value="CDH_121__a_Preparation.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="b_HDFS">
+<param name="Local" value="CDH_121__b_HDFS.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="c1_YARN">
+<param name="Local" value="CDH_121__c1_YARN.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="c2_MRv1">
+<param name="Local" value="CDH_121__c2_MRv1.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="d_ZooKeeper">
+<param name="Local" value="CDH_121__d_ZooKeeper.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="e_Mahout">
+<param name="Local" value="CDH_121__e_Mahout.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="f1_Hive_embedded">
+<param name="Local" value="CDH_121__f1_Hive_embedded.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="f2_Hive _remote_mysql">
+<param name="Local" value="CDH_121__f2_Hive _remote_mysql.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="g1_HBase_standalone">
+<param name="Local" value="CDH_121__g1_HBase_standalone.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="g2_HBase_pseudo">
+<param name="Local" value="CDH_121__g2_HBase_pseudo.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="g3_HBase_distributed">
+<param name="Local" value="CDH_121__g3_HBase_distributed.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="h_Flume">
+<param name="Local" value="CDH_121__h_Flume.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="i_Sqoop">
+<param name="Local" value="CDH_121__i_Sqoop.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="j_Pig">
+<param name="Local" value="CDH_121__j_Pig.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="k_Oozie">
+<param name="Local" value="CDH_121__k_Oozie.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="l_Impala">
+<param name="Local" value="CDH_121__l_Impala.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="m_Spark">
+<param name="Local" value="CDH_121__m_Spark.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="n_HCatalog">
+<param name="Local" value="CDH_121__n_HCatalog.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="CDH_Dev">
+<param name="Local" value="CDH_Dev.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Windows_Dev">
+<param name="Local" value="CDH_Dev__Windows_Dev.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Cloudera">
+<param name="Local" value="Cloudera.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="CDH_Manager">
+<param name="Local" value="Cloudera__CDH_Manager.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Eclipse-Maven">
+<param name="Local" value="Cloudera__Eclipse-Maven.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Eclipse-Plugin">
+<param name="Local" value="Cloudera__Eclipse-Plugin.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Port">
+<param name="Local" value="Cloudera__Port.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Psuedo_dist">
+<param name="Local" value="Cloudera__Psuedo_dist.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="DSChallenge">
+<param name="Local" value="DSChallenge.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="00_startup">
+<param name="Local" value="DSChallenge__00_startup.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="01_Hive">
+<param name="Local" value="DSChallenge__01_Hive.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="01a">
+<param name="Local" value="DSChallenge__01a.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="01b">
+<param name="Local" value="DSChallenge__01b.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="01c">
+<param name="Local" value="DSChallenge__01c.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="01d">
+<param name="Local" value="DSChallenge__01d.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="01f">
+<param name="Local" value="DSChallenge__01f.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="02a">
+<param name="Local" value="DSChallenge__02a.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="02b">
+<param name="Local" value="DSChallenge__02b.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="02c">
+<param name="Local" value="DSChallenge__02c.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="official">
+<param name="Local" value="DSChallenge__official.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hadoop">
+<param name="Local" value="Hadoop.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Efficieny Test">
+<param name="Local" value="Hadoop__Efficieny Test.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="First MapResuce">
+<param name="Local" value="Hadoop__First MapResuce.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HBase">
+<param name="Local" value="Hadoop__HBase.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HBase_cmd">
+<param name="Local" value="Hadoop__HBase_cmd.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS commands">
+<param name="Local" value="Hadoop__HDFS commands.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hadoop - Local">
+<param name="Local" value="Hadoop__Hadoop - Local.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hadoop Eclipse Plugin">
+<param name="Local" value="Hadoop__Hadoop Eclipse Plugin.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hadoop jar on HDFS">
+<param name="Local" value="Hadoop__Hadoop jar on HDFS.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hive">
+<param name="Local" value="Hadoop__Hive.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Mahout">
+<param name="Local" value="Hadoop__Mahout.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Mahout_Java_Standalone">
+<param name="Local" value="Hadoop__Mahout_Java_Standalone.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MapReduce WordCount">
+<param name="Local" value="Hadoop__MapReduce WordCount.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Parameters">
+<param name="Local" value="Hadoop__Parameters.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Pig">
+<param name="Local" value="Hadoop__Pig.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Pig Latin">
+<param name="Local" value="Hadoop__Pig Latin.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Sqoop">
+<param name="Local" value="Hadoop__Sqoop.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Starbase Install">
+<param name="Local" value="Hadoop__Starbase Install.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Startbase_cmd">
+<param name="Local" value="Hadoop__Startbase_cmd.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="amazon emr">
+<param name="Local" value="Hadoop__amazon emr.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="hive with hbase">
+<param name="Local" value="Hadoop__hive with hbase.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="mrjob">
+<param name="Local" value="Hadoop__mrjob.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hive">
+<param name="Local" value="Hive.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="json_serde">
+<param name="Local" value="Hive__json_serde.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="local_mode">
+<param name="Local" value="Hive__local_mode.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="streaming">
+<param name="Local" value="Hive__streaming.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Instance">
+<param name="Local" value="Instance.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Get Basic statistics of tweets">
+<param name="Local" value="Instance__Get Basic statistics of tweets.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Get tweets and save into Hbase">
+<param name="Local" value="Instance__Get tweets and save into Hbase.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Kmeans using scipy">
+<param name="Local" value="Instance__Kmeans using scipy.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Linux">
+<param name="Local" value="Linux.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="cluster_pre">
+<param name="Local" value="Linux__cluster_pre.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="crontab">
+<param name="Local" value="Linux__crontab.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="jdk">
+<param name="Local" value="Linux__jdk.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="nfs">
+<param name="Local" value="Linux__nfs.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="rsh">
+<param name="Local" value="Linux__rsh.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="vm_static_ip">
+<param name="Local" value="Linux__vm_static_ip.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="xrdp">
+<param name="Local" value="Linux__xrdp.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="yum">
+<param name="Local" value="Linux__yum.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="yum_lock">
+<param name="Local" value="Linux__yum_lock.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Mahout">
+<param name="Local" value="Mahout.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Installation">
+<param name="Local" value="Mahout__Installation.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="SeqDirectory">
+<param name="Local" value="Mahout__SeqDirectory.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Text">
+<param name="Local" value="Mahout__Text.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="seq2sparse">
+<param name="Local" value="Mahout__seq2sparse.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="split">
+<param name="Local" value="Mahout__split.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Mahout_CookBook">
+<param name="Local" value="Mahout_CookBook.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="FP_Growth">
+<param name="Local" value="Mahout_CookBook__FP_Growth.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="ItemBasedRecommendation">
+<param name="Local" value="Mahout_CookBook__ItemBasedRecommendation.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="KMeans">
+<param name="Local" value="Mahout_CookBook__KMeans.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="LogistrcRegression">
+<param name="Local" value="Mahout_CookBook__LogistrcRegression.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="NaiveBayes">
+<param name="Local" value="Mahout_CookBook__NaiveBayes.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Random_Forest">
+<param name="Local" value="Mahout_CookBook__Random_Forest.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Others">
+<param name="Local" value="Others.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Anaconda">
+<param name="Local" value="Others__Anaconda.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="DB2_Install_Flow">
+<param name="Local" value="Others__DB2_Install_Flow.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="DB2_cmd">
+<param name="Local" value="Others__DB2_cmd.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="GitHub">
+<param name="Local" value="Others__GitHub.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MongoDB">
+<param name="Local" value="Others__MongoDB.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MongoDB_cmd">
+<param name="Local" value="Others__MongoDB_cmd.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="MongoDB_linux">
+<param name="Local" value="Others__MongoDB_linux.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="R">
+<param name="Local" value="Others__R.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Remote db2">
+<param name="Local" value="Others__Remote db2.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Twitter_Search">
+<param name="Local" value="Others__Twitter_Search.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Vibo">
+<param name="Local" value="Others__Vibo.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="WordCount_Test">
+<param name="Local" value="Others__WordCount_Test.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="jdk">
+<param name="Local" value="Others__jdk.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="json">
+<param name="Local" value="Others__json.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="pandas DataFrame plot">
+<param name="Local" value="Others__pandas DataFrame plot.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="postgreSQL">
+<param name="Local" value="Others__postgreSQL.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Python">
+<param name="Local" value="Python.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS">
+<param name="Local" value="Python__HDFS.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="datatime">
+<param name="Local" value="Python__datatime.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="unicode">
+<param name="Local" value="Python__unicode.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="R">
+<param name="Local" value="R.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="HDFS">
+<param name="Local" value="R__HDFS.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="R vs Python">
+<param name="Local" value="R__R vs Python.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="streaming">
+<param name="Local" value="R__streaming.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Vibo">
+<param name="Local" value="Vibo.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Codes">
+<param name="Local" value="Vibo__Codes.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Hardware">
+<param name="Local" value="Vibo__Hardware.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="postgreSQL">
+<param name="Local" value="Vibo__postgreSQL.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="WWW">
+<param name="Local" value="WWW.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Python">
+<param name="Local" value="WWW__Python.html">
+</OBJECT>
+
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Q and A">
+<param name="Local" value="WWW__Q and A.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="_Sample">
+<param name="Local" value="_Sample.html">
+</OBJECT>
+
+<UL>
+<LI><OBJECT type="text/sitemap">
+<param name="Name" value="Sample">
+<param name="Local" value="_Sample__Sample.html">
+</OBJECT>
+
+</UL>
+            
+</UL>
+            
+</UL>
+            
+</BODY></HTML>
+        

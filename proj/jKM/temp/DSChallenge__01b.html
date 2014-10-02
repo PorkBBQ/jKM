@@ -1,0 +1,485 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">01b
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Data Scientist Challenge01 01b - with type</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Data Scientist Challenge01 01b - with type</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">DSC</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_01b.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					# -*- coding: utf-8 -*-
+<br />
+<br />import json
+<br />import collections
+<br />
+<br />datafile = open(r'D:\Josh\data\DSC01\heckle\web.log.2')
+<br />intermediate=[]
+<br />#-- map -----------------------------------------
+<br />jsons=[]
+<br />replaceList=[]
+<br />replaceList.append(['craetedAt', 'createdAt'])
+<br />replaceList.append(['created_at', 'createdAt'])
+<br />replaceList.append(['session_id', 'sessionID'])
+<br />replaceList.append(['user_agent', 'userAgent'])
+<br />
+<br />for _ in datafile.readlines():
+<br />    jsonStr=_.replace('""', '"')
+<br />    for _1, _2 in replaceList:
+<br />        jsonStr = jsonStr.replace(_1, _2)
+<br />    jsons.append(json.loads(jsonStr))
+<br />
+<br />for _1 in jsons:
+<br />    for _2, _3 in _1.items():
+<br />        typeStr=str(type(_3)).replace("&lt;type '", "").replace("'>", "")
+<br />        #print(_2+':'+typeStr)
+<br />        intermediate.append(_2+':'+typeStr)
+<br />        
+<br />#-- /map -----------------------------------------
+<br />
+<br />
+<br />#-- reduce -----------------------------------------
+<br />
+<br />counter=collections.Counter(intermediate)
+<br />for _ in counter.items():
+<br />    print(_)
+<br />        
+<br />#-- /reduce -----------------------------------------
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_01b_map.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					#!/usr/bin/python
+<br />
+<br />import json
+<br />import sys
+<br />
+<br />jsons=[]
+<br />replaceList=[]
+<br />replaceList.append(['craetedAt', 'createdAt'])
+<br />replaceList.append(['created_at', 'createdAt'])
+<br />replaceList.append(['session_id', 'sessionID'])
+<br />replaceList.append(['user_agent', 'userAgent'])
+<br />
+<br />for _ in sys.stdin:
+<br />    jsonStr=_.replace('""', '"')
+<br />    for _1, _2 in replaceList:
+<br />        jsonStr = jsonStr.replace(_1, _2)
+<br />    jsons.append(json.loads(jsonStr))
+<br />    
+<br />for _1 in jsons:
+<br />    for _2, _3 in _1.items():
+<br />        typeStr=str(type(_3)).replace("&lt;type '", "").replace("'>", "")
+<br />        print(_2+':'+typeStr)
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>streaming</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_01b \
+<br />-file /home/biadmin/josh/script/dsc01/dsc01_01b.py \
+<br />-mapper /home/biadmin/josh/script/dsc01/dsc01_01b.py \
+<br />-reducer "uniq -c" \
+<br />-combiner "uniq -c"
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>output</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					      1       9 auth:unicode 
+<br />      1       9 createdAt:unicode 
+<br />      1       9 payload:dict 
+<br />      1       9 refId:unicode 
+<br />      1       9 sessionID:unicode 
+<br />      1       9 type:unicode 
+<br />      1       9 user:int 
+<br />      1       9 userAgent:unicode 
+<br />      1     726 auth:unicode 
+<br />      1     726 createdAt:unicode 
+<br />      1     719 payload:dict 
+<br />      1     726 refId:unicode 
+<br />      1     726 sessionID:unicode 
+<br />      1     726 type:unicode 
+<br />      1     726 user:int 
+<br />      1     726 userAgent:unicode 
+<br />      1    1561 auth:unicode 
+<br />      1    1561 createdAt:unicode 
+<br />      1    1556 payload:dict 
+<br />      1    1561 refId:unicode 
+<br />      1    1561 sessionID:unicode 
+<br />      1    1561 type:unicode 
+<br />      1    1561 user:int 
+<br />      1    1561 userAgent:unicode 
+<br />      1    2015 auth:unicode 
+<br />      1    2015 createdAt:unicode 
+<br />      1    2005 payload:dict 
+<br />      1    2015 refId:unicode 
+<br />      1    2015 sessionID:unicode 
+<br />      1    2015 type:unicode 
+<br />      1    2015 user:int 
+<br />      1    2015 userAgent:unicode 
+<br />      1    6309 auth:unicode 
+<br />      1    6309 createdAt:unicode 
+<br />      1    6276 payload:dict 
+<br />      1    6309 refId:unicode 
+<br />      1    6309 sessionID:unicode 
+<br />      1    6309 type:unicode 
+<br />      1    6309 user:int 
+<br />      1    6309 userAgent:unicode 
+<br />      1    6673 auth:unicode 
+<br />      1    6673 createdAt:unicode 
+<br />      1    6634 payload:dict 
+<br />      1    6673 refId:unicode 
+<br />      1    6673 sessionID:unicode 
+<br />      1    6673 type:unicode 
+<br />      1    6673 user:int 
+<br />      1    6673 userAgent:unicode 
+<br />      1   26330 auth:unicode 
+<br />      1   26330 createdAt:unicode 
+<br />      1   26183 payload:dict 
+<br />      1   26330 refId:unicode 
+<br />      1   26330 sessionID:unicode 
+<br />      1   26330 type:unicode 
+<br />      1   26330 user:int 
+<br />      1   26330 userAgent:unicode 
+<br />      1   32779 auth:unicode 
+<br />      1   32779 createdAt:unicode 
+<br />      1   32597 payload:dict 
+<br />      1   32779 refId:unicode 
+<br />      1   32779 sessionID:unicode 
+<br />      1   32779 type:unicode 
+<br />      1   32779 user:int 
+<br />      1   32779 userAgent:unicode 
+<br />      1   36133 createdAt:unicode 
+<br />      1   35922 payload:dict 
+<br />      1   36133 sessionID:unicode 
+<br />      1   36133 type:unicode 
+<br />      1   36133 user:int 
+<br />      1   36133 userAgent:unicode 
+<br />      1   36169 createdAt:unicode 
+<br />      1   35955 payload:dict 
+<br />      1   36169 sessionID:unicode 
+<br />      1   36169 type:unicode 
+<br />      1   36169 user:int 
+<br />      1   36169 userAgent:unicode 
+<br />      1   39978 auth:unicode 
+<br />      1   39978 createdAt:unicode 
+<br />      1   39797 payload:dict 
+<br />      1   39978 refId:unicode 
+<br />      1   39978 sessionID:unicode 
+<br />      1   39978 type:unicode 
+<br />      1   39978 user:int 
+<br />      1   39978 userAgent:unicode 
+<br />      1   41506 auth:unicode 
+<br />      1   41506 createdAt:unicode 
+<br />      1   41264 payload:dict 
+<br />      1   41506 refId:unicode 
+<br />      1   41506 sessionID:unicode 
+<br />      1   41506 type:unicode 
+<br />      1   41506 user:int 
+<br />      1   41506 userAgent:unicode 
+<br />      1   44875 auth:unicode 
+<br />      1   44875 createdAt:unicode 
+<br />      1   44598 payload:dict 
+<br />      1   44875 refId:unicode 
+<br />      1   44875 sessionID:unicode 
+<br />      1   44875 type:unicode 
+<br />      1   44875 user:int 
+<br />      1   44875 userAgent:unicode 
+<br />      1   45760 createdAt:unicode 
+<br />      1   45474 payload:dict 
+<br />      1   45760 sessionID:unicode 
+<br />      1   45760 type:unicode 
+<br />      1   45760 user:int 
+<br />      1   45760 userAgent:unicode 
+<br />      1   46273 createdAt:unicode 
+<br />      1   46012 payload:dict 
+<br />      1   46273 sessionID:unicode 
+<br />      1   46273 type:unicode 
+<br />      1   46273 user:int 
+<br />      1   46273 userAgent:unicode 
+<br />      1   47097 createdAt:unicode 
+<br />      1   46834 payload:dict 
+<br />      1   47097 sessionID:unicode 
+<br />      1   47097 type:unicode 
+<br />      1   47097 user:int 
+<br />      1   47097 userAgent:unicode 
+<br />      1   48230 auth:unicode 
+<br />      1   48230 createdAt:unicode 
+<br />      1   47949 payload:dict 
+<br />      1   48230 refId:unicode 
+<br />      1   48230 sessionID:unicode 
+<br />      1   48230 type:unicode 
+<br />      1   48230 user:int 
+<br />      1   48230 userAgent:unicode 
+<br />      1   49729 createdAt:unicode 
+<br />      1   49430 payload:dict 
+<br />      1   49729 sessionID:unicode 
+<br />      1   49729 type:unicode 
+<br />      1   49729 user:int 
+<br />      1   49729 userAgent:unicode 
+<br />      1   49816 auth:unicode 
+<br />      1   49816 createdAt:unicode 
+<br />      1   49528 payload:dict 
+<br />      1   49816 refId:unicode 
+<br />      1   49816 sessionID:unicode 
+<br />      1   49816 type:unicode 
+<br />      1   49816 user:int 
+<br />      1   49816 userAgent:unicode 
+<br />      1   50905 auth:unicode 
+<br />      1   50905 createdAt:unicode 
+<br />      1   50610 payload:dict 
+<br />      1   50905 refId:unicode 
+<br />      1   50905 sessionID:unicode 
+<br />      1   50905 type:unicode 
+<br />      1   50905 user:int 
+<br />      1   50905 userAgent:unicode 
+<br />
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

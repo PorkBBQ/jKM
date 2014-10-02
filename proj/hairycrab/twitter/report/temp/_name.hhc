@@ -1,0 +1,47 @@
+<html>
+	<head>
+<META http-equiv="Content-Type" content="text/html; charset=big5"> 	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+
+        		<object type="text/site properties">
+        			<param name="Window Styles" value="0x800025">
+        			</param>
+        			<param name="Font" value="Arial Unicode MS,8,0">
+        			</param>
+        		</object>
+        		<ul>
+<li> <object type="text/sitemap">
+			<param name="name" value="Tweets">
+			</param>
+			<param name="Local" value="_cover.html">
+			</param>
+</object>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Statistics">
+				</param>
+				<param name="Local" value="Basic statistics of the tweets.html">
+				</param>
+</object>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Daily Distribution">
+				</param>
+				<param name="Local" value="daily.html">
+				</param>
+</object>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Grographic Distribution">
+				</param>
+				<param name="Local" value="geoMap.html">
+				</param>
+</object>
+			</ul>
+		</ul>
+	</body>
+</html>

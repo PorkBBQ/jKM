@@ -1,0 +1,43 @@
+<html>
+	<head>
+		
+<style type="text/css">
+    body {    font-family: arial;   line-height:24px    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+</style>
+<META http-equiv="Content-Type" content="text/html; charset=big5"> 	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+            $("[name='v']").mouseover(function(){    
+            //$(this).css("color", "red");
+            $(this).css("cursor","pointer");
+            $(this).css("background-color","#EEEEEE");
+            //$(this).css("font-weight","bolder");
+
+		})
+        	$("[name='v']").mouseout(function(){    
+            //$(this).css("color", "black");    
+            $(this).css("cursor","auto");
+            $(this).css("background-color","#FFFFFF");
+            //$(this).css("font-weight","normal");
+		})
+	})
+</script>		
+
+<p style="font-size:18pt">mongodb_linux</p><hr />
+<table style="border-style:none">
+	<tr>
+		<td style="border-style:none">Description&nbsp;:&nbsp;</td>
+		<td name="v" style="border-style:none">install mongoDB on linux (64 bit)</font></td>
+	</tr>
+</table>
+
+</html>

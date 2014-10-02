@@ -1,0 +1,505 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">02b
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Data Scientist Challenge01 02b - complete summary</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Data Scientist Challenge01 02b - complete summary</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">DSC</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_02b.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					#!/home/biadmin/anaconda/bin/python
+<br />
+<br />import json
+<br />import sys
+<br />
+<br />digits=[str(_) for _ in range(1,101)]
+<br />
+<br />def getReplaceList():
+<br />    replaceList=[]
+<br />    replaceList.append(['""', '"'])
+<br />    replaceList.append(['"craetedAt":', '"createdAt":'])
+<br />    replaceList.append(['"created_at":', '"createdAt":'])
+<br />    replaceList.append(['"session_id":', '"sessionID":'])
+<br />    replaceList.append(['"user_agent":', '"userAgent":'])
+<br />    replaceList.append(['"item_id":', '"itemId":'])
+<br />    return replaceList
+<br />
+<br />def getDrillPaths():
+<br />    return {
+<br />        '/auth':0
+<br />        , '/createdAt':0
+<br />        , '/payload':1
+<br />        , '/refId':0
+<br />        , '/sessionID':0
+<br />        , '/type':1
+<br />        , '/user':0
+<br />        , '/userAgent':0
+<br />        , '/payload/itemId':0
+<br />        , '/payload/marker':0
+<br />        , '/payload/popular':1
+<br />        , '/payload/recent':0
+<br />        , '/payload/recommended':1
+<br />        , '/payload/recs/':1
+<br />        , '/payload/results':1
+<br />    }
+<br />
+<br />def getPathTypes():    
+<br />    return {
+<br />        '/auth':'3'
+<br />        , '/createdAt':'date'
+<br />        , '/payload':'1'
+<br />        , '/refId':'3'
+<br />        , '/sessionID':'3'
+<br />        , '/type':'3'
+<br />        , '/user':'num'
+<br />        , '/userAgent':'1'
+<br />        , '/payload/itemId':'num'
+<br />        , '/payload/lengtg':'num'
+<br />        , '/payload/marker':'num'
+<br />        , '/payload/new':'freq10'
+<br />        , '/payload/old':'freq10'
+<br />        , '/payload/popular':'1'
+<br />        , '/payload/popular/':'freq10'
+<br />        , '/payload/rating':'freq10'
+<br />        , '/payload/recent':'3'
+<br />        , '/payload/recs':'3'
+<br />        , '/payload/recs/':'freq10'
+<br />        , '/payload/recommended':'3'
+<br />        , '/payload/recommended/':'freq10'
+<br />        , '/payload/results':'1'
+<br />        , '/payload/results/':'freq10'
+<br />    }   
+<br />
+<br />def expand(item, path='', gPath='type'):
+<br />    drillPaths=getDrillPaths()
+<br />    if type(item) is dict:
+<br />        for k, v in item.items():
+<br />            p=path + '/' + str(k)
+<br />            t='dict'
+<br />            mapOut(p, str(v), t)
+<br />            d=drillPaths[p] if p in drillPaths else False
+<br />            if d: 
+<br />                expand(v, p)
+<br />                
+<br />    elif type(item) is list:
+<br />        for _ in item:
+<br />            p=path+'/'
+<br />            t='list'
+<br />            mapOut(p, str(_), t)
+<br />            d=drillPaths[p] if p in drillPaths else False
+<br />            if d: 
+<br />                expand(v, p)
+<br />    else:
+<br />        p=path+'/'+str(item)
+<br />        t=str(type(item)).replace("&lt;type '", "").replace("'>", "")
+<br />        mapOut(p, str(item), t)
+<br />
+<br />def mapOut(k, v='', t='', s=''):
+<br />    pathTypes=getPathTypes()
+<br />    if t in ['dict', 'list']:
+<br />        s='3'
+<br />    if k in pathTypes:
+<br />        s=pathTypes[k]
+<br />    out=k + '\t' + str(v) + '\t' + t + '\t' + str(s)
+<br />    if env=='local':
+<br />        intermediate.append(out)
+<br />    elif env=='mr':
+<br />        print(out)
+<br />
+<br />def mapper(env):
+<br />    if env=='local':
+<br />        datafile = open(inputFile)
+<br />        it=datafile.readlines()
+<br />    elif env=='mr':
+<br />        it=sys.stdin
+<br />    for _ in it:
+<br />        _ = _.strip()
+<br />        for r1, r2 in getReplaceList():
+<br />            _ = _.replace(r1, r2)
+<br />        expand(json.loads(_))
+<br />
+<br />def reducer(env='local'):
+<br />    summary={}
+<br />    if env=='local':
+<br />        it=intermediate 
+<br />    elif env=='mr':
+<br />        it=sys.stdin
+<br />    for _ in it:
+<br />        _key, _value, _type, _summary=_.split('\t')
+<br />        _key=_key.strip()
+<br />        _value=_value.strip()
+<br />        _type=_type.strip()
+<br />        _summary=_summary.strip()
+<br />        
+<br />        if _key not in summary:
+<br />            summary[_key]={'cnt':1}
+<br />        else:
+<br />            summary[_key]['cnt']+=1
+<br />            
+<br />        summary[_key]['type']=_type
+<br />        summary[_key]['summary']=_summary
+<br />        #if _type.isdigit():
+<br />        if _summary in digits:
+<br />            if 'example' not in summary[_key]:
+<br />                summary[_key]['example']=[_value]
+<br />            else:
+<br />                if len(summary[_key]['example'])&lt;int(_summary):
+<br />                    summary[_key]['example'].append(_value)
+<br />        
+<br />        if _summary in ['num']:       
+<br />            try:
+<br />                _value = float(_value)
+<br />            except ValueError:
+<br />                pass
+<br />            if _value==int(_value):
+<br />                _value=int(_value)
+<br />    
+<br />            if 'min' not in summary[_key]:
+<br />                summary[_key]['min']=_value
+<br />            else:
+<br />                summary[_key]['min']=min(summary[_key]['min'], _value)
+<br />            if 'max' not in summary[_key]:
+<br />                summary[_key]['max']=_value
+<br />            else:
+<br />                summary[_key]['max']=max(summary[_key]['max'], _value)
+<br />            if 'sum' not in summary[_key]:
+<br />                summary[_key]['sum']=_value
+<br />            else:
+<br />                summary[_key]['sum']+=_value
+<br />            if 'avg' not in summary[_key]:
+<br />                summary[_key]['avg']=_value
+<br />            else:
+<br />                summary[_key]['avg']=float(summary[_key]['sum'])/float(summary[_key]['cnt'])
+<br />    
+<br />        if _summary in ['date']:
+<br />            if 'min' not in summary[_key]:
+<br />                summary[_key]['min']=_value
+<br />            else:
+<br />                summary[_key]['min']=min(summary[_key]['min'], _value)
+<br />            if 'max' not in summary[_key]:
+<br />                summary[_key]['max']=_value
+<br />            else:
+<br />                summary[_key]['max']=max(summary[_key]['max'], _value)
+<br />
+<br />        if _summary in ['freq', 'freq10']:
+<br />            if 'freq' not in summary[_key]:
+<br />                summary[_key]['freq']={}
+<br />                summary[_key]['freq'][_value]=1
+<br />            else:
+<br />                if _value not in summary[_key]['freq']:
+<br />                    summary[_key]['freq'][_value]=1
+<br />                else:
+<br />                    summary[_key]['freq'][_value]+=1
+<br />                
+<br />    for k, v in sorted(summary.items()):
+<br />        vf=''
+<br />        t=str(v.pop('type'))
+<br />        s=str(v.pop('summary'))
+<br />        if t in ['list', 'dict']:
+<br />            t='(' + t + ', ' + s + ')'
+<br />        else:
+<br />            t='(' + t + ')'        
+<br />            
+<br />        if 'cnt' in v:    
+<br />            c=''+str(v.pop('cnt'))
+<br />        if s=='freq10':
+<br />            v['freq']=sorted(v['freq'].items(), key=lambda x:x[1], reverse=True)[:10]
+<br />        for k2, v2 in sorted(v.items()):
+<br />            vf+='\t'+str(k2)+':'+str(v2)
+<br />        print(c + '\t'+ str(k) + '\t' + t + vf)
+<br />
+<br />env='local' if len(sys.argv)==1 else 'mr'
+<br />
+<br />if env=='local':
+<br />    inputFile=r'D:\Josh\data\DSC01\heckle\web.log.2'
+<br />    intermediate=[]
+<br />    mapper('local')
+<br />    reducer('local')
+<br />elif env=='mr':
+<br />    if sys.argv[1]=='-m':
+<br />        mapper('mr')
+<br />    elif sys.argv[1]=='-r':
+<br />        reducer('mr')
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>streaming</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop fs -rmr /tmp/dsc01_02b
+<br />
+<br />hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_02b \
+<br />-file /home/biadmin/josh/script/dsc01/dsc01_02b.py \
+<br />-mapper "/home/biadmin/josh/script/dsc01/dsc01_02b.py -m" \
+<br />-reducer "/home/biadmin/josh/script/dsc01/dsc01_02b.py -r"
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>output</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					351712 /auth (dict, 3) example:['27e059f:1dc32c72', '597a4ca:3fbacc0c', '2e50b24:704eadc5']
+<br />612873 /createdAt (dict, date) max:2013-05-12T23:59:59-08:00 min:2013-05-06T08:00:01Z
+<br />609352 /payload (dict, 1) example:["{u'itemId': u'24869', u'marker': 1620}"]
+<br />585639 /payload/itemId (dict, num) avg:7.26317748647e+215 max:212680000000000013699700306378293167432602672153876137726248112661111424029432828190392061051388099476153395307201267011801709909789858378406349846474574615007380140812467266067701549747834460554412102541090748829496508416 min:1094 sum:425360000000006976774750612756454297940368400931180168876334431488953858987320689818041669176397033802644203773570827389000027509164574333934788768155781234227020345773373003942001812950110029184299365129120014655150990861
+<br />274 /payload/length (dict, 3) example:['535', '1168', '601']
+<br />559731 /payload/marker (dict, num) avg:2146.28542639 max:8525 min:0 sum:1201342488
+<br />134 /payload/new (dict, 3) example:['kid', 'kid', 'kid']
+<br />134 /payload/old (dict, freq10) freq:[('adult', 134)]
+<br />5425 /payload/popular (dict, 1) example:["[u'20936', u'34805', u'26577', u'14029', u'26996']"]
+<br />27125 /payload/popular/ (list, freq10) freq:[('2028', 513), ('30658', 481), ('8712', 470), ('32353', 468), ('25276', 467), ('10375', 465), ('2815', 460), ('22487', 459), ('7130', 454), ('19550', 454)]
+<br />926 /payload/rating (dict, freq10) freq:[('5', 305), ('4', 283), ('3', 158), ('2', 100), ('1', 80)]
+<br />5425 /payload/recent (dict, 3) example:["[u'37098']", "[u'15419e15']", "[u'2716']"]
+<br />5425 /payload/recommended (dict, 3) example:["[u'13463', u'5217e1', u'21710', u'30973', u'16357']", "[u'29968', u'18644', u'13003e45', u'31330', u'8941']", "[u'31845e23', u'16379e1', u'36598', u'2044', u'17443']"]
+<br />27125 /payload/recommended/ (list, freq10) freq:[('10375', 214), ('7194', 159), ('11396', 158), ('20662', 149), ('14445e45', 147), ('17733', 136), ('16357', 128), ('28415', 123), ('28814', 122), ('33406', 117)]
+<br />1344 /payload/recs (dict, 3) example:["[u'15337', u'8962', u'19376', u'31117e67', u'38398e1', u'13666', u'23283', u'22255', u'33930e1', u'20936', u'15291', u'17782', u'32251e45', u'4286e89', u'3593e23', u'7743', u'35832', u'26839', u'24744e67', u'11142', u'35757', u'25454e23', u'32218', u'6198', u'20435']", "[u'17403', u'36508', u'17250e1', u'20642', u'22407', u'25139e45', u'10449', u'20850', u'25520', u'39155', u'35231', u'6160', u'21659', u'28594', u'8276', u'23808', u'39886e45', u'19429', u'5806', u'2528', u'30625', u'10965', u'17443', u'4758', u'11979']", "[u'39593', u'36889', u'34343', u'7579', u'6259e111', u'1151', u'35792e23', u'32476', u'5079', u'20731', u'32218', u'9779e23', u'39030e67', u'12023', u'32251e45', u'39709', u'7580', u'18283', u'10596', u'33706', u'15337', u'36508', u'34500', u'35757', u'7489']"]
+<br />1328 /payload/results (dict, 1) example:["[u'37004', u'35284', u'5686', u'10667', u'35587', u'8362', u'32054', u'16836e1', u'19106e23', u'2452', u'10298', u'11236', u'11380', u'33755', u'9170e23', u'26738', u'7017e45', u'33328', u'23414e67', u'20817e45']"]
+<br />26560 /payload/results/ (list, freq10) freq:[('16714', 26), ('19197', 26), ('27205', 24), ('33446', 23), ('38391', 23), ('11872', 23), ('9875', 23), ('24052', 22), ('14611', 22), ('22264', 21)]
+<br />177 /payload/subAction (dict, 3) example:['parentalControls', 'parentalControls', 'parentalControls']
+<br />351712 /refId (dict, 3) example:['55b0eafc', '114a99d4', '49ca33dc']
+<br />612873 /sessionID (dict, 3) example:['c914a230-39d5-45e2-8d91-5afa0f278682', 'b873e048-a738-4302-bade-18cc6fee60c4', '5bebad04-dcd8-4180-ae62-1d55a0615b93']
+<br />612873 /type (dict, 3) example:['Play', 'Play', 'Play']
+<br />177 /type/Account (unicode)
+<br />5091 /type/AddToQueue (unicode)
+<br />3062 /type/Advance (unicode)
+<br />5425 /type/Home (unicode)
+<br />19617 /type/Hover (unicode)
+<br />274 /type/ItemPage (unicode)
+<br />1057 /type/Login (unicode)
+<br />1018 /type/Logout (unicode)
+<br />4424 /type/Pause (unicode)
+<br />558568 /type/Play (unicode)
+<br />164 /type/Position (unicode)
+<br />1313 /type/Queue (unicode)
+<br />652 /type/Rate (unicode)
+<br />1344 /type/Recommendations (unicode)
+<br />1774 /type/Resume (unicode)
+<br />1328 /type/Search (unicode)
+<br />7178 /type/Stop (unicode)
+<br />133 /type/VerifyPassword (unicode)
+<br />274 /type/WriteReview (unicode)
+<br />612873 /user (dict, num) avg:50189405.7037 max:99985450 min:1091145 sum:30759731641853
+<br />612873 /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)']
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

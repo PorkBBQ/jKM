@@ -1,0 +1,655 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">02c
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">Data Scientist Challenge01 02b - group summary</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">Data Scientist Challenge01 02b - group summary</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">DSC</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Process</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>dsc01_02b.py</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					#!/home/biadmin/anaconda/bin/python
+<br />
+<br />import json
+<br />import sys
+<br />
+<br />digits=[str(_) for _ in range(1,101)]
+<br />
+<br />def getReplaceList():
+<br />    replaceList=[]
+<br />    replaceList.append(['""', '"'])
+<br />    replaceList.append(['"craetedAt":', '"createdAt":'])
+<br />    replaceList.append(['"created_at":', '"createdAt":'])
+<br />    replaceList.append(['"session_id":', '"sessionID":'])
+<br />    replaceList.append(['"user_agent":', '"userAgent":'])
+<br />    replaceList.append(['"item_id":', '"itemId":'])
+<br />    return replaceList
+<br />
+<br />def getDrillPaths():
+<br />    return {
+<br />        '/auth':0
+<br />        , '/createdAt':0
+<br />        , '/payload':1
+<br />        , '/refId':0
+<br />        , '/sessionID':0
+<br />        , '/type':1
+<br />        , '/user':0
+<br />        , '/userAgent':0
+<br />        , '/payload/itemId':0
+<br />        , '/payload/marker':0
+<br />        , '/payload/popular':1
+<br />        , '/payload/recent':0
+<br />        , '/payload/recommended':1
+<br />        , '/payload/recs/':1
+<br />        , '/payload/results':1
+<br />    }
+<br />
+<br />def getPathTypes():    
+<br />    return {
+<br />        '/auth':'3'
+<br />        , '/createdAt':'date'
+<br />        , '/payload':'1'
+<br />        , '/refId':'3'
+<br />        , '/sessionID':'3'
+<br />        , '/type':'3'
+<br />        , '/user':'num'
+<br />        , '/userAgent':'1'
+<br />        , '/payload/itemId':'num'
+<br />        , '/payload/lengtg':'num'
+<br />        , '/payload/marker':'num'
+<br />        , '/payload/new':'freq10'
+<br />        , '/payload/old':'freq10'
+<br />        , '/payload/popular':'1'
+<br />        , '/payload/popular/':'freq10'
+<br />        , '/payload/rating':'freq10'
+<br />        , '/payload/recent':'3'
+<br />        , '/payload/recs':'3'
+<br />        , '/payload/recs/':'freq10'
+<br />        , '/payload/recommended':'3'
+<br />        , '/payload/recommended/':'freq10'
+<br />        , '/payload/results':'1'
+<br />        , '/payload/results/':'freq10'
+<br />    }   
+<br />
+<br />def expand(item, path='', group='/'):
+<br />    drillPaths=getDrillPaths()
+<br />    if type(item) is dict:
+<br />        for k, v in item.items():
+<br />            p=path + '/' + str(k)
+<br />            t='dict'
+<br />            mapOut(p, str(v), t, g=group)
+<br />            d=drillPaths[p] if p in drillPaths else False
+<br />            if d: 
+<br />                expand(v, p, group=group)
+<br />                
+<br />    elif type(item) is list:
+<br />        for _ in item:
+<br />            p=path+'/'
+<br />            t='list'
+<br />            mapOut(p, str(_), t, g=group)
+<br />            d=drillPaths[p] if p in drillPaths else False
+<br />            if d: 
+<br />                expand(v, p, group=group)
+<br />    else:
+<br />        p=path+'/'+str(item)
+<br />        t=str(type(item)).replace("&lt;type '", "").replace("'>", "")
+<br />        mapOut(p, str(item), t, g=group)
+<br />
+<br />def mapOut(k, v='', t='', s='', g='/'):
+<br />    pathTypes=getPathTypes()
+<br />    if t in ['dict', 'list']:
+<br />        s='3'
+<br />    if k in pathTypes:
+<br />        s=pathTypes[k]
+<br />    out=k + '\t' + str(v) + '\t' + t + '\t' + str(s) + '\t' + g
+<br />    if env=='local':
+<br />        intermediate.append(out)
+<br />    elif env=='mr':
+<br />        print(out)
+<br />
+<br />def mapper(env):
+<br />    if env=='local':
+<br />        datafile = open(inputFile)
+<br />        it=datafile.readlines()
+<br />    elif env=='mr':
+<br />        it=sys.stdin
+<br />    for _ in it:
+<br />        _ = _.strip()
+<br />        for r1, r2 in getReplaceList():
+<br />            _ = _.replace(r1, r2)
+<br />        j=json.loads(_)
+<br />        g=j['type']
+<br />        expand(j, group=g)
+<br />
+<br />def reducer(env='local'):
+<br />    summary={}
+<br />    if env=='local':
+<br />        it=intermediate 
+<br />    elif env=='mr':
+<br />        it=sys.stdin
+<br />    for _ in it:
+<br />        _key, _value, _type, _summary, _group=[_2.strip() for _2 in _.split('\t')]
+<br />        _key = _group + '\t' + _key
+<br />        if _key not in summary:
+<br />            summary[_key]={'cnt':1}
+<br />        else:
+<br />            summary[_key]['cnt']+=1
+<br />            
+<br />        summary[_key]['type']=_type
+<br />        summary[_key]['summary']=_summary
+<br />        summary[_key]['group']=_group
+<br />        
+<br />        #if _type.isdigit():
+<br />        if _summary in digits:
+<br />            if 'example' not in summary[_key]:
+<br />                summary[_key]['example']=[_value]
+<br />            else:
+<br />                if len(summary[_key]['example'])&lt;int(_summary):
+<br />                    summary[_key]['example'].append(_value)
+<br />        
+<br />        if _summary in ['num']:       
+<br />            try:
+<br />                _value = float(_value)
+<br />            except ValueError:
+<br />                pass
+<br />            if _value==int(_value):
+<br />                _value=int(_value)
+<br />    
+<br />            if 'min' not in summary[_key]:
+<br />                summary[_key]['min']=_value
+<br />            else:
+<br />                summary[_key]['min']=min(summary[_key]['min'], _value)
+<br />            if 'max' not in summary[_key]:
+<br />                summary[_key]['max']=_value
+<br />            else:
+<br />                summary[_key]['max']=max(summary[_key]['max'], _value)
+<br />            if 'sum' not in summary[_key]:
+<br />                summary[_key]['sum']=_value
+<br />            else:
+<br />                summary[_key]['sum']+=_value
+<br />            if 'avg' not in summary[_key]:
+<br />                summary[_key]['avg']=_value
+<br />            else:
+<br />                summary[_key]['avg']=float(summary[_key]['sum'])/float(summary[_key]['cnt'])
+<br />    
+<br />        if _summary in ['date']:
+<br />            if 'min' not in summary[_key]:
+<br />                summary[_key]['min']=_value
+<br />            else:
+<br />                summary[_key]['min']=min(summary[_key]['min'], _value)
+<br />            if 'max' not in summary[_key]:
+<br />                summary[_key]['max']=_value
+<br />            else:
+<br />                summary[_key]['max']=max(summary[_key]['max'], _value)
+<br />
+<br />        if _summary in ['freq', 'freq10']:
+<br />            if 'freq' not in summary[_key]:
+<br />                summary[_key]['freq']={}
+<br />                summary[_key]['freq'][_value]=1
+<br />            else:
+<br />                if _value not in summary[_key]['freq']:
+<br />                    summary[_key]['freq'][_value]=1
+<br />                else:
+<br />                    summary[_key]['freq'][_value]+=1
+<br />                
+<br />    for k, v in sorted(summary.items(), key=lambda x:x[1]['group']):
+<br />        vf=''
+<br />        t=str(v.pop('type'))
+<br />        s=str(v.pop('summary'))
+<br />        if t in ['list', 'dict']:
+<br />            t='(' + t + ', ' + s + ')'
+<br />        else:
+<br />            t='(' + t + ')'        
+<br />            
+<br />        if 'cnt' in v:    
+<br />            c=''+str(v.pop('cnt'))
+<br />        if s=='freq10':
+<br />            v['freq']=sorted(v['freq'].items(), key=lambda x:x[1], reverse=True)[:10]
+<br />        for k2, v2 in sorted(v.items()):
+<br />            vf+='\t'+str(k2)+':'+str(v2)
+<br />        print(c + '\t'+ str(k) + '\t' + t + vf)
+<br />
+<br />env='local' if len(sys.argv)==1 else 'mr'
+<br />
+<br />if env=='local':
+<br />    inputFile=r'D:\Josh\data\DSC01\heckle\web.log.2'
+<br />    intermediate=[]
+<br />    mapper('local')
+<br />    reducer('local')
+<br />elif env=='mr':
+<br />    if sys.argv[1]=='-m':
+<br />        mapper('mr')
+<br />    elif sys.argv[1]=='-r':
+<br />        reducer('mr')
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>streaming</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop fs -rmr /tmp/dsc01_02c
+<br />
+<br />hadoop jar $HADOOP_HOME/hadoop-streaming.jar \
+<br />-input /data/dsc01/heckle \
+<br />-input /data/dsc01/jeckle \
+<br />-output /tmp/dsc01_02c \
+<br />-file /home/biadmin/josh/script/dsc01/dsc01_02c.py \
+<br />-mapper "/home/biadmin/josh/script/dsc01/dsc01_02c.py -m" \
+<br />-reducer "/home/biadmin/josh/script/dsc01/dsc01_02c.py -r"
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>output</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					134 Account /payload/new (dict, freq10) freq:[('kid', 134)] group:Account
+<br />177 Account /createdAt (dict, date) group:Account max:2013-05-12T23:06:11-08:00 min:2013-05-06T08:02:56Z
+<br />177 Account /sessionID (dict, 3) example:['3419d1e9-c7e0-4c22-b7ef-e1b93ac4b20e', 'efbbfd3f-da88-499b-af8a-2355b9629e1d', '295f7750-3a6d-43d4-a825-889a54dcf5c9'] group:Account
+<br />177 Account /type (dict, 3) example:['Account', 'Account', 'Account'] group:Account
+<br />177 Account /user (dict, num) avg:47623573.8644 group:Account max:99314647 min:1634306 sum:8429372574
+<br />177 Account /payload (dict, 1) example:["{u'new': u'kid', u'old': u'adult', u'subAction': u'parentalControls'}"] group:Account
+<br />99 Account /auth (dict, 3) example:['5e9f6a1:287de60d', '53912bf:4f5124f4', '2ab526d:6669b4ba'] group:Account
+<br />177 Account /payload/subAction (dict, 3) example:['parentalControls', 'parentalControls', 'parentalControls'] group:Account
+<br />99 Account /refId (dict, 3) example:['7e237390', '73c41245', '70798631'] group:Account
+<br />177 Account /type/Account (unicode) group:Account
+<br />134 Account /payload/old (dict, freq10) freq:[('adult', 134)] group:Account
+<br />177 Account /userAgent (dict, 1) example:['Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.92 Safari/537.4'] group:Account
+<br />5091 AddToQueue /type/AddToQueue (unicode) group:AddToQueue
+<br />5091 AddToQueue /createdAt (dict, date) group:AddToQueue max:2013-05-12T23:57:46-08:00 min:2013-05-06T08:00:32Z
+<br />5091 AddToQueue /payload/itemId (dict, num) avg:1.83912787272e+200 group:AddToQueue max:268149999999999984422510198194709276596752927664185308715136137344010616974147000105678272506967508384360942721492960600983096348917692492971764452222942433286213097732578216119742339684883215066666631168 min:1094 sum:936299999999999981757030367034560633660541179868127704617013658868825427404307074224134559004198135627217350875998568853731758047692327866870699551653342159193792863543890471013479407193089083390337887292
+<br />5091 AddToQueue /type (dict, 3) example:['AddToQueue', 'AddToQueue', 'AddToQueue'] group:AddToQueue
+<br />5091 AddToQueue /user (dict, num) avg:50609784.8046 group:AddToQueue max:99985450 min:1169676 sum:257654414440
+<br />2919 AddToQueue /auth (dict, 3) example:['3f30c1b:3a6f934b', '46b2126:228d0876', '17c3637:4a2fa9d2'] group:AddToQueue
+<br />5091 AddToQueue /payload (dict, 1) example:["{u'itemId': u'37274'}"] group:AddToQueue
+<br />5091 AddToQueue /userAgent (dict, 1) example:['Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.4) Gecko/20091027 Fedora/3.5.4-1.fc12 Firefox/3.5.4'] group:AddToQueue
+<br />2919 AddToQueue /refId (dict, 3) example:['31824e34', '294c43b4', '265b1847'] group:AddToQueue
+<br />5091 AddToQueue /sessionID (dict, 3) example:['232311d1-5808-470b-8653-b8273f24c948', '1391c974-0492-4eed-90da-e17f28c51afa', 'caf5e85e-7e7c-45b1-b9be-6949a0fcc337'] group:AddToQueue
+<br />3062 Advance /createdAt (dict, date) group:Advance max:2013-05-09T07:27:37Z min:2013-05-06T08:02:10Z
+<br />3062 Advance /user (dict, num) avg:51177856.6688 group:Advance max:99856025 min:1091145 sum:156706597120
+<br />3062 Advance /type/Advance (unicode) group:Advance
+<br />3062 Advance /payload/itemId (dict, num) avg:5.64337034618e+134 group:Advance max:1728000000000000109634697484566000180642782357291092196117652237717612370693009278252497572309620635133001579444531956487201553817786122240 min:1094 sum:1728000000000000109634715120566001453943581789047920040527908068293328821111797918801315485839831581629224677810201225480821921457303302237
+<br />3062 Advance /payload/marker (dict, num) avg:2085.52122796 group:Advance max:8491 min:0 sum:6385866
+<br />3062 Advance /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; GTB7.3; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729)'] group:Advance
+<br />3062 Advance /sessionID (dict, 3) example:['3ccceff7-2aa7-4947-95b2-8790bd8e0a73', 'fb318af7-5715-4c39-9fcb-eec0e2dab921', '47a228f3-fc59-45db-b110-03dc0dfa0c91'] group:Advance
+<br />3062 Advance /payload (dict, 1) example:["{u'itemId': u'6891', u'marker': 671}"] group:Advance
+<br />3062 Advance /type (dict, 3) example:['Advance', 'Advance', 'Advance'] group:Advance
+<br />5425 Home /payload/recommended (dict, 3) example:["[u'29309', u'16997e155', u'13347', u'15869e45', u'34255']", "[u'24300', u'20731', u'15385', u'36889', u'3122']", "[u'12092', u'11086', u'7743', u'3445e23', u'9008e111']"] group:Home
+<br />5425 Home /type/Home (unicode) group:Home
+<br />5425 Home /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; InfoPath.2; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; .NET4.0C; .NET4.0E; MS-RTC LM 8)'] group:Home
+<br />5425 Home /user (dict, num) avg:49984786.819 group:Home max:99985450 min:1091145 sum:271167468493
+<br />5425 Home /type (dict, 3) example:['Home', 'Home', 'Home'] group:Home
+<br />5425 Home /sessionID (dict, 3) example:['caf5e85e-7e7c-45b1-b9be-6949a0fcc337', 'ecbbeb04-4b1e-49da-b766-710f7e9d2dbf', '1805741d-f946-4ef7-b7d0-b3c9805494d2'] group:Home
+<br />3109 Home /auth (dict, 3) example:['46b2126:228d0876', '508ee1a:250573d8', '21915e6:4c4bbd29'] group:Home
+<br />5425 Home /payload (dict, 1) example:["{u'popular': [u'3173', u'27777', u'4583', u'32212', u'19474'], u'recommended': [u'13350', u'31311', u'25132e1', u'21677e1', u'6891'], u'recent': [u'29899']}"] group:Home
+<br />27125 Home /payload/recommended/ (list, freq10) freq:[('10375', 214), ('7194', 159), ('11396', 158), ('20662', 149), ('14445e45', 147), ('17733', 136), ('16357', 128), ('28415', 123), ('28814', 122), ('33406', 117)] group:Home
+<br />3109 Home /refId (dict, 3) example:['63b5fd2f', '7386f961', '31824e34'] group:Home
+<br />5425 Home /createdAt (dict, date) group:Home max:2013-05-12T23:57:18-08:00 min:2013-05-06T08:00:08Z
+<br />27125 Home /payload/popular/ (list, freq10) freq:[('2028', 513), ('30658', 481), ('8712', 470), ('32353', 468), ('25276', 467), ('10375', 465), ('2815', 460), ('22487', 459), ('7130', 454), ('19550', 454)] group:Home
+<br />5425 Home /payload/recent (dict, 3) example:["[u'9987e77']", "[u'13004']", "[u'35138e13']"] group:Home
+<br />5425 Home /payload/popular (dict, 1) example:["[u'4385', u'21618', u'11321', u'14969', u'10515']"] group:Home
+<br />11376 Hover /auth (dict, 3) example:['46b2126:228d0876', '46b2126:228d0876', '3f30c1b:3a6f934b'] group:Hover
+<br />19617 Hover /type (dict, 3) example:['Hover', 'Hover', 'Hover'] group:Hover
+<br />19617 Hover /payload/itemId (dict, num) avg:1.08416169649e+217 group:Hover max:212680000000000013699700306378293167432602672153876137726248112661111424029432828190392061051388099476153395307201267011801709909789858378406349846474574615007380140812467266067701549747834460554412102541090748829496508416 min:1094 sum:212680000000001353019500306378187285100363093072647479560029163033071942367149310960453537119330530458771937426224009658363798779013443541704260792984123414379437466041231434132723131034366820862648245333501468742146370172
+<br />19617 Hover /createdAt (dict, date) group:Hover max:2013-05-12T23:58:08-08:00 min:2013-05-06T08:00:18Z
+<br />11376 Hover /refId (dict, 3) example:['406464e6', '63b5fd2f', '406464e6'] group:Hover
+<br />19617 Hover /payload (dict, 1) example:["{u'itemId': u'10286'}"] group:Hover
+<br />19617 Hover /type/Hover (unicode) group:Hover
+<br />19617 Hover /sessionID (dict, 3) example:['caf5e85e-7e7c-45b1-b9be-6949a0fcc337', '5e5c6963-00f2-4d67-8a36-9291fea8dc88', '232311d1-5808-470b-8653-b8273f24c948'] group:Hover
+<br />19617 Hover /user (dict, num) avg:50158191.3782 group:Hover max:99985450 min:1091145 sum:983953240267
+<br />19617 Hover /userAgent (dict, 1) example:['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5'] group:Hover
+<br />274 ItemPage /type/ItemPage (unicode) group:ItemPage
+<br />154 ItemPage /auth (dict, 3) example:['28a18d6:1c1c0e66', '2aa6cff:5fd6e355', '57191cd:4aa5e459'] group:ItemPage
+<br />274 ItemPage /sessionID (dict, 3) example:['7eeb2b27-a981-4404-a307-88667fcd1597', '78b4d1e2-0b21-4a90-af9f-6c1a5c2dd841', 'ba9425ed-b05e-4ee9-a050-d827d92535eb'] group:ItemPage
+<br />274 ItemPage /createdAt (dict, date) group:ItemPage max:2013-05-12T23:34:12-08:00 min:2013-05-06T08:02:15Z
+<br />274 ItemPage /payload/itemId (dict, num) avg:8.72080291971e+112 group:ItemPage max:17636000000000000799346036807200105425394534344328967123669937370849169306806577121170002144391998360860736454918144 min:1458 sum:23895000000000000481154784652799003283513783735259887333187377263683182837013048975424557012475905287005738160187357
+<br />274 ItemPage /payload (dict, 1) example:["{u'itemId': u'26365'}"] group:ItemPage
+<br />274 ItemPage /userAgent (dict, 1) example:['Opera/9.80 (Windows NT 6.1; U; zh-cn) Presto/2.10.229 Version/11.61'] group:ItemPage
+<br />274 ItemPage /user (dict, num) avg:49770339.9051 group:ItemPage max:99270605 min:1263067 sum:13637073134
+<br />154 ItemPage /refId (dict, 3) example:['256925c7', '13d56f15', '74819748'] group:ItemPage
+<br />274 ItemPage /type (dict, 3) example:['ItemPage', 'ItemPage', 'ItemPage'] group:ItemPage
+<br />1057 Login /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; InfoPath.2)'] group:Login
+<br />1057 Login /sessionID (dict, 3) example:['a8fa3381-d2e3-4ada-b7a2-f834ec3cb5b0', '17c4080f-7dc0-4cec-bcd2-33c92b924e97', '2b460bad-50f7-43b8-a10a-771fff2b2f09'] group:Login
+<br />603 Login /refId (dict, 3) example:['4036af64', '2352b4f2', '7c4e4392'] group:Login
+<br />1057 Login /createdAt (dict, date) group:Login max:2013-05-12T23:36:07-08:00 min:2013-05-06T08:01:42Z
+<br />1057 Login /user (dict, num) avg:49325068.5118 group:Login max:99856025 min:1091145 sum:52136597417
+<br />1057 Login /type (dict, 3) example:['Login', 'Login', 'Login'] group:Login
+<br />1057 Login /type/Login (unicode) group:Login
+<br />603 Login /auth (dict, 3) example:['1148a00:e66189ba', '597819a:2a50393e', '37e9024:5c76443d'] group:Login
+<br />571 Logout /refId (dict, 3) example:['64fbfc95', '26cbf32f', '60ec975f'] group:Logout
+<br />1018 Logout /sessionID (dict, 3) example:['b5f0584c-1c4f-4f75-bc3c-f15be2417c07', '8d74b6b7-ae8e-4b6b-a474-e013b343e5a4', '639c4aa8-e0a1-419c-a3c3-c93aecc733c9'] group:Logout
+<br />571 Logout /auth (dict, 3) example:['5f5a82a:50c8b7d0', '2d8ec93:fd6ef993', '519d3a6:6f015056'] group:Logout
+<br />1018 Logout /createdAt (dict, date) group:Logout max:2013-05-12T23:59:15-08:00 min:2013-05-06T08:13:44Z
+<br />1018 Logout /user (dict, num) avg:48915219.9587 group:Logout max:99985450 min:1091145 sum:49795693918
+<br />1018 Logout /userAgent (dict, 1) example:['Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.1 (KHTML, like Gecko) Chrome/14.0.835.186 Safari/535.1'] group:Logout
+<br />1018 Logout /type/Logout (unicode) group:Logout
+<br />1018 Logout /type (dict, 3) example:['Logout', 'Logout', 'Logout'] group:Logout
+<br />4424 Pause /type (dict, 3) example:['Pause', 'Pause', 'Pause'] group:Pause
+<br />4424 Pause /type/Pause (unicode) group:Pause
+<br />4424 Pause /createdAt (dict, date) group:Pause max:2013-05-12T23:57:22-08:00 min:2013-05-06T08:00:49Z
+<br />4424 Pause /payload/itemId (dict, num) avg:3.32262658228e+200 group:Pause max:1336300000000000099094944685398648453284392352455105844099158407195311798602273099373488916745190856145224243535696921551142522445044052142089425891633512425659577068983343629626174045084817846903488118784 min:1094 sum:1469930000000000098561841304766618724696575777328664070307427095483710441743616969281213002264012446661677547015621580118070158909078166696844738637720417500111245354527133961247056542364179062485755575956
+<br />4424 Pause /user (dict, num) avg:50103317.2432 group:Pause max:99985450 min:1091145 sum:221657075484
+<br />4424 Pause /payload/marker (dict, num) avg:2207.7079566 group:Pause max:7215 min:1 sum:9766900
+<br />2543 Pause /auth (dict, 3) example:['3642f05:6eb4d431', '7045e8:48b70ac6', '3c871af:75680af3'] group:Pause
+<br />4424 Pause /userAgent (dict, 1) example:['Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11 CoolNovo/2.0.2.26'] group:Pause
+<br />4424 Pause /payload (dict, 1) example:["{u'itemId': u'6334', u'marker': 1062}"] group:Pause
+<br />4424 Pause /sessionID (dict, 3) example:['08d5fce0-8875-4582-9c8e-450f5fbd64c6', '4c187515-158c-4f3d-af15-dbc72e9df062', '3666f1e0-1cd6-4232-a556-aef1d264c2fa'] group:Pause
+<br />2543 Pause /refId (dict, 3) example:['563fa576', '3fe20367', '2b107d8d'] group:Pause
+<br />558568 Play /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; BTRS122327; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; InfoPath.2; .NET4.0C; InfoPath.1; MATM; 8987050903; update/02208)'] group:Play
+<br />558568 Play /sessionID (dict, 3) example:['334fa8e6-8bea-4000-bf63-c28886d14e98', '033bafff-d27b-49af-bb9a-635193b9c4b7', '47eae865-8d2a-492b-ba84-74b2be629661'] group:Play
+<br />543129 Play /payload/marker (dict, num) avg:2138.49845985 group:Play max:8525 min:0 sum:1161480530
+<br />558568 Play /user (dict, num) avg:50192151.134 group:Play max:99985450 min:1091145 sum:28035729474627
+<br />543129 Play /payload/itemId (dict, num) avg:1.02949393054e+202 group:Play max:133629999999999996542969221599839790715631796670438343511785448389765758241499230154316175242847054835480984947208169366123110915614540046175627975758747732060113996774659983318101756968643063744428326780928 min:1094 sum:5591480089999999972576482298119751725481070622568814132429165347028434933615216594136535411884231256907431395453541683122316351718136982892102073178391683690656136762509736421377626690088899533751568373959766
+<br />558568 Play /type/Play (unicode) group:Play
+<br />323244 Play /auth (dict, 3) example:['1c91132:5c67e917', '122e5f8:76bf9f21', '264774:3454d7f0'] group:Play
+<br />558568 Play /type (dict, 3) example:['Play', 'Play', 'Play'] group:Play
+<br />323244 Play /refId (dict, 3) example:['a80093e7', '2b4d8325', '5c8b5f71'] group:Play
+<br />558568 Play /createdAt (dict, date) group:Play max:2013-05-12T23:59:59-08:00 min:2013-05-06T08:00:01Z
+<br />558568 Play /payload (dict, 1) example:["{u'itemId': u'39878', u'marker': 540}"] group:Play
+<br />164 Position /type (dict, 3) example:['Position', 'Position', 'Position'] group:Position
+<br />164 Position /type/Position (unicode) group:Position
+<br />164 Position /sessionID (dict, 3) example:['9f70fc45-41ca-4d51-998b-9517fe538432', 'a163410f-1867-4d38-8641-70ffff77ec88', 'fb318af7-5715-4c39-9fcb-eec0e2dab921'] group:Position
+<br />164 Position /payload/marker (dict, num) avg:2358.18292683 group:Position max:6690 min:0 sum:386742
+<br />164 Position /user (dict, num) avg:49317538.8232 group:Position max:99413523 min:1091145 sum:8088076367
+<br />164 Position /payload (dict, 1) example:["{u'itemId': u'33230e8', u'marker': 154}"] group:Position
+<br />164 Position /createdAt (dict, date) group:Position max:2013-05-09T07:02:48Z min:2013-05-06T08:25:34Z
+<br />164 Position /userAgent (dict, 1) example:['Mozilla/5.0 (Macintosh; Intel Mac OS X 10.7; rv:6.0.2) Gecko/20100101 Firefox/6.0.2'] group:Position
+<br />164 Position /payload/itemId (dict, num) avg:1.55280487805e+102 group:Position max:254660000000000003766200591746504285453034912493196775502379889083994092069326312272795801019869212704768 min:1565 sum:254660000000000005384900591746504361727048444930709813883778144091445080990369078548720258331544403008833
+<br />1313 Queue /sessionID (dict, 3) example:['6fbe8165-3755-435e-b185-865deecdfe3a', '1805741d-f946-4ef7-b7d0-b3c9805494d2', 'ec4569d7-9ee0-4a42-8947-220f8709f92a'] group:Queue
+<br />1313 Queue /userAgent (dict, 1) example:['Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko) Chrome/12.0.742.124 Safari/534.30'] group:Queue
+<br />735 Queue /auth (dict, 3) example:['3f30c1b:3a6f934b', '3498b7f:559487ad', '12a1ff2:3ac6b9b0'] group:Queue
+<br />735 Queue /refId (dict, 3) example:['63b5fd2f', '64831630', '6381f4c8'] group:Queue
+<br />1313 Queue /type (dict, 3) example:['Queue', 'Queue', 'Queue'] group:Queue
+<br />1313 Queue /type/Queue (unicode) group:Queue
+<br />1313 Queue /createdAt (dict, date) group:Queue max:2013-05-12T23:36:31-08:00 min:2013-05-06T08:01:21Z
+<br />1313 Queue /user (dict, num) avg:50424708.7974 group:Queue max:99806989 min:1091145 sum:66207642651
+<br />652 Rate /payload (dict, 1) example:["{u'itemId': u'33898', u'rating': 4}"] group:Rate
+<br />387 Rate /auth (dict, 3) example:['46b2126:228d0876', '12a1ff2:3ac6b9b0', '10a649:26fb3f4a'] group:Rate
+<br />652 Rate /type (dict, 3) example:['Rate', 'Rate', 'Rate'] group:Rate
+<br />652 Rate /sessionID (dict, 3) example:['312e6d55-6639-4860-881e-37935ff1dd3b', 'caf5e85e-7e7c-45b1-b9be-6949a0fcc337', '232311d1-5808-470b-8653-b8273f24c948'] group:Rate
+<br />652 Rate /createdAt (dict, date) group:Rate max:2013-05-12T23:36:08-08:00 min:2013-05-06T08:03:32Z
+<br />652 Rate /user (dict, num) avg:49635732.385 group:Rate max:99314647 min:1091145 sum:32362497515
+<br />652 Rate /userAgent (dict, 1) example:['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.52 Safari/536.5'] group:Rate
+<br />652 Rate /type/Rate (unicode) group:Rate
+<br />652 Rate /payload/itemId (dict, num) avg:3.26196319018e+218 group:Rate max:212680000000000013699700306378293167432602672153876137726248112661111424029432828190392061051388099476153395307201267011801709909789858378406349846474574615007380140812467266067701549747834460554412102541090748829496508416 min:1317 sum:212680000000000013699700306378293167432602672153876139062548112661119134217686647733151326640573945101367418423057605740605256355391508846732264679943734641185937475358240978884804570869758729737348509469898852851128935125
+<br />387 Rate /refId (dict, 3) example:['265b1847', '64831630', '5c4aed2e'] group:Rate
+<br />652 Rate /payload/rating (dict, freq10) freq:[('4', 207), ('5', 178), ('3', 122), ('2', 79), ('1', 66)] group:Rate
+<br />784 Recommendations /refId (dict, 3) example:['7386f961', '294c43b4', '265b1847'] group:Recommendations
+<br />1344 Recommendations /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0; .NET CLR 1.1.4322; .NET CLR 2.0.50727; .NET CLR 3.0.4506.2152; .NET CLR 3.5.30729; InfoPath.3)'] group:Recommendations
+<br />1344 Recommendations /sessionID (dict, 3) example:['fb893996-95ef-41bd-b42d-0c0bb8e3e337', '232311d1-5808-470b-8653-b8273f24c948', '2b3d6056-e8f6-4040-aed0-d8497e959caf'] group:Recommendations
+<br />1344 Recommendations /type/Recommendations (unicode) group:Recommendations
+<br />784 Recommendations /auth (dict, 3) example:['23753e2:5bcaa5e5', '23a4570:2b32098b', '1acd73c:6af7b647'] group:Recommendations
+<br />1344 Recommendations /user (dict, num) avg:50165065.0863 group:Recommendations max:99985450 min:1091145 sum:67421847476
+<br />1344 Recommendations /type (dict, 3) example:['Recommendations', 'Recommendations', 'Recommendations'] group:Recommendations
+<br />1344 Recommendations /createdAt (dict, date) group:Recommendations max:2013-05-12T23:58:00-08:00 min:2013-05-06T08:00:56Z
+<br />1344 Recommendations /payload/recs (dict, 3) example:["[u'22062', u'31500', u'30357', u'28863', u'14909', u'33542', u'36889', u'9694', u'19868', u'21659', u'18283', u'6160', u'37307', u'14015', u'36508', u'2403e45', u'8276', u'34721', u'7580', u'6259e111', u'12023', u'10759', u'29339', u'10965', u'11979']", "[u'5978', u'20803', u'6896', u'1989', u'11035', u'26212', u'37028', u'35313', u'19371', u'12663e23', u'14706e45', u'8040', u'22967', u'5539e45', u'27230', u'12363', u'26897', u'14974', u'25709', u'4677', u'39365', u'17631', u'13584', u'9955', u'9008e111']", "[u'19179e1', u'9065', u'14217', u'1260e1', u'8394', u'17542', u'4758', u'32109', u'15970', u'39755', u'12523', u'16316', u'18579', u'15385', u'6324', u'24003', u'8464e23', u'20146', u'27446', u'19474', u'12884e1', u'3625', u'12276', u'29888', u'2092']"] group:Recommendations
+<br />1344 Recommendations /payload (dict, 1) example:["{u'recs': [u'11663', u'34158', u'24821', u'17074', u'38596', u'11086', u'12363', u'29362', u'13058', u'37274', u'27278', u'22741', u'2166', u'37660', u'25732e1', u'22251', u'4117e1', u'29981', u'16033', u'27230', u'39495e1', u'24720', u'26237', u'16065', u'9008e111']}"] group:Recommendations
+<br />1774 Resume /type/Resume (unicode) group:Resume
+<br />1774 Resume /sessionID (dict, 3) example:['03e679e8-e640-41f8-aef1-201154ec13d0', '882d755b-e6b0-475e-804a-f39bcdfca10d', '6c515af7-e848-4fd1-8872-5233a297229c'] group:Resume
+<br />1774 Resume /userAgent (dict, 1) example:['Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.7 (KHTML, like Gecko) Chrome/20.0.1099.0 Safari/536.7'] group:Resume
+<br />1774 Resume /user (dict, num) avg:51027539.1623 group:Resume max:99985450 min:1091145 sum:90522854474
+<br />1774 Resume /createdAt (dict, date) group:Resume max:2013-05-09T07:31:48Z min:2013-05-06T08:02:04Z
+<br />1774 Resume /payload/marker (dict, num) avg:2250.60146561 group:Resume max:6917 min:0 sum:3992567
+<br />1774 Resume /type (dict, 3) example:['Resume', 'Resume', 'Resume'] group:Resume
+<br />1774 Resume /payload/itemId (dict, num) avg:5.71758737317e+155 group:Resume max:1014299999999999936554117763980256563248607390453916341296980990136868028592348754493354855828531439842581133491007947209886605413120119395697984647988391182336 min:1094 sum:1014299999999999936554117763980256563248607408089934837551641789912796192808002344761206288681529576764944237146426236812497106830388456791723344019014813729225
+<br />1774 Resume /payload (dict, 1) example:["{u'itemId': u'33230e8', u'marker': 154}"] group:Resume
+<br />26560 Search /payload/results/ (list, freq10) freq:[('16714', 26), ('19197', 26), ('27205', 24), ('33446', 23), ('38391', 23), ('11872', 23), ('9875', 23), ('24052', 22), ('14611', 22), ('22264', 21)] group:Search
+<br />769 Search /refId (dict, 3) example:['747d5925', '2352b4f2', '60ec975f'] group:Search
+<br />1328 Search /userAgent (dict, 1) example:['Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1; .NET CLR 2.0.50727; InfoPath.2)'] group:Search
+<br />769 Search /auth (dict, 3) example:['46b2126:228d0876', '21915e6:4c4bbd29', '136ec4e:3a09b500'] group:Search
+<br />1328 Search /sessionID (dict, 3) example:['1391c974-0492-4eed-90da-e17f28c51afa', '7a42345f-f7ed-407c-8665-9441a99de9b4', '73a8388e-3f76-4f68-8691-54fb216a7618'] group:Search
+<br />1328 Search /payload/results (dict, 1) example:["[u'22248', u'19332', u'33443', u'8362', u'3006', u'26866', u'9692', u'12415', u'3173', u'35661', u'36947', u'35107', u'16248', u'29770', u'6645', u'26446', u'12117', u'37098', u'24587', u'28863']"] group:Search
+<br />1328 Search /user (dict, num) avg:50523812.448 group:Search max:99976229 min:1170207 sum:67095622931
+<br />1328 Search /payload (dict, 1) example:["{u'results': [u'6282', u'18496e89', u'37558e67', u'13906', u'34340', u'14797e1', u'5300e1', u'11908e1', u'23956', u'35410', u'7580', u'13347', u'24646e1', u'28572', u'39984', u'29706', u'25669', u'8068', u'1342', u'7471']}"] group:Search
+<br />1328 Search /type/Search (unicode) group:Search
+<br />1328 Search /type (dict, 3) example:['Search', 'Search', 'Search'] group:Search
+<br />1328 Search /createdAt (dict, date) group:Search max:2013-05-12T23:36:56-08:00 min:2013-05-06T08:02:11Z
+<br />7178 Stop /type/Stop (unicode) group:Stop
+<br />4187 Stop /refId (dict, 3) example:['29bfc4bd', '26cbf32f', '64fbfc95'] group:Stop
+<br />7178 Stop /sessionID (dict, 3) example:['24a42136-181f-4832-8181-328dbf476082', '91e760cb-0c92-493a-942b-d216f76eeb28', '17e43c80-fc3e-427f-8575-5b8d603c2f0b'] group:Stop
+<br />7178 Stop /userAgent (dict, 1) example:['Mozilla/5.0 (Linux; U; Android 2.3.3; en-us; GT-I9100 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1'] group:Stop
+<br />7178 Stop /type (dict, 3) example:['Stop', 'Stop', 'Stop'] group:Stop
+<br />4187 Stop /auth (dict, 3) example:['14ad8ed:3ac6b9b0', '22fbf68:d82e208d', '1f638ce:2a334ec2'] group:Stop
+<br />7178 Stop /user (dict, num) avg:49769162.3371 group:Stop max:99976229 min:1091145 sum:357243047256
+<br />7178 Stop /payload (dict, 1) example:["{u'itemId': u'38526e5', u'marker': 2340}"] group:Stop
+<br />7178 Stop /payload/itemId (dict, num) avg:2.25260936194e+201 group:Stop max:13363000000000000990949446853986484532843923524551058440991584071953117986022730993734889167451908561452242435356969215511425224450440521420894258916335124256595770689833436296261740450848178469034881187840 min:1094 sum:16169230000000001188606232844151751710826017628769538578312697011781121557071717814843503231424320883009494286930042926825907216597903086763408542834106556393072786871569175321015315054133919512124567847541
+<br />7178 Stop /createdAt (dict, date) group:Stop max:2013-05-12T23:55:49-08:00 min:2013-05-06T08:04:10Z
+<br />7178 Stop /payload/marker (dict, num) avg:2692.93438284 group:Stop max:8233 min:172 sum:19329883
+<br />133 VerifyPassword /type (dict, 3) example:['VerifyPassword', 'VerifyPassword', 'VerifyPassword'] group:VerifyPassword
+<br />133 VerifyPassword /createdAt (dict, date) group:VerifyPassword max:2013-05-12T23:02:33-08:00 min:2013-05-06T10:02:24Z
+<br />133 VerifyPassword /userAgent (dict, 1) example:['Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.92 Safari/537.4'] group:VerifyPassword
+<br />133 VerifyPassword /user (dict, num) avg:47262951.6917 group:VerifyPassword max:99314647 min:1634306 sum:6285972575
+<br />78 VerifyPassword /refId (dict, 3) example:['1c944190', '73c41245', '70798631'] group:VerifyPassword
+<br />133 VerifyPassword /type/VerifyPassword (unicode) group:VerifyPassword
+<br />133 VerifyPassword /sessionID (dict, 3) example:['62738121-6479-4062-8477-c44be502bdec', 'efbbfd3f-da88-499b-af8a-2355b9629e1d', '295f7750-3a6d-43d4-a825-889a54dcf5c9'] group:VerifyPassword
+<br />78 VerifyPassword /auth (dict, 3) example:['5e9f6a1:287de60d', '53912bf:4f5124f4', '2ab526d:6669b4ba'] group:VerifyPassword
+<br />274 WriteReview /type (dict, 3) example:['WriteReview', 'WriteReview', 'WriteReview'] group:WriteReview
+<br />274 WriteReview /user (dict, num) avg:49770339.9051 group:WriteReview max:99270605 min:1263067 sum:13637073134
+<br />274 WriteReview /userAgent (dict, 1) example:['Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.45 Safari/535.19'] group:WriteReview
+<br />274 WriteReview /sessionID (dict, 3) example:['ba9425ed-b05e-4ee9-a050-d827d92535eb', '46f82ef4-9fcb-4dfe-b444-cd8024b8023a', '16cdec4c-6bf7-452b-969d-f08808de8d8a'] group:WriteReview
+<br />274 WriteReview /payload (dict, 1) example:["{u'itemId': u'8276', u'rating': 5, u'length': 199}"] group:WriteReview
+<br />274 WriteReview /type/WriteReview (unicode) group:WriteReview
+<br />154 WriteReview /auth (dict, 3) example:['28a18d6:1c1c0e66', '2aa6cff:5fd6e355', '57191cd:4aa5e459'] group:WriteReview
+<br />274 WriteReview /payload/length (dict, 3) example:['965', '345', '225'] group:WriteReview
+<br />274 WriteReview /payload/itemId (dict, num) avg:8.72080291971e+112 group:WriteReview max:17636000000000000799346036807200105425394534344328967123669937370849169306806577121170002144391998360860736454918144 min:1458 sum:23895000000000000481154784652799003283513783735259887333187377263683182837013048975424557012475905287005738160187357
+<br />274 WriteReview /createdAt (dict, date) group:WriteReview max:2013-05-12T23:38:58-08:00 min:2013-05-06T08:11:46Z
+<br />154 WriteReview /refId (dict, 3) example:['256925c7', '13d56f15', '4cc19f96'] group:WriteReview
+<br />274 WriteReview /payload/rating (dict, freq10) freq:[('5', 127), ('4', 76), ('3', 36), ('2', 21), ('1', 14)] group:WriteReview
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

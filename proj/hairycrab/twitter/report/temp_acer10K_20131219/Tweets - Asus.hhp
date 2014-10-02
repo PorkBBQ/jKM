@@ -1,0 +1,8 @@
+[OPTIONS]
+    	Compatibility=1.1 or later
+    	Compiled file=Tweets - Asus.chm
+    	Contents file=Tweets - Asus.hhc
+    	Default topic=_cover.html
+    	Display compile progress=No
+    	Full-text search=Yes
+     Title=Tweets - Asus

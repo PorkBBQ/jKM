@@ -1,0 +1,8 @@
+[OPTIONS]
+    	Compatibility=1.1 or later
+    	Compiled file=tweets_asus.chm
+    	Contents file=tweets_asus.hhc
+    	Default topic=_cover.html
+    	Display compile progress=No
+    	Full-text search=Yes
+     Title=Tweets Analysis Report - ASUS

@@ -1,0 +1,359 @@
+<html>
+	<head>
+		<style type="text/css">
+			
+    body {    font-family: arial;   line-height:24px    }
+    pre {    font-family: arial    }
+    table {    border: 1px solid #666666;    border-collapse: collapse;    }
+    td,th {    border: 1px solid #666666;    padding: 5;     font-size: 10pt;    text-align:center;    }
+    th {    background-color: FFDDBB;  }
+    a:link    {        color: #0000FF;        text-decoration: none;    }
+    a:visited    {        color: #0000FF;        text-decoration: none;    }
+    a:hover    {        color: #FF0000;        text-decoration: underline;    }
+    a:active    {        color: #FF0000;        text-decoration: underline;    }
+
+		</style>
+		<META content="text/html" http-equiv="Content-Type">
+		</META>
+	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+		
+    <script>
+        $(document).ready(function(){
+        		$("[class='v']").mouseover(function(){    
+        			$(this).css("background-color","#EEEEFF");
+        		})
+                	$("[class='v']").mouseout(function(){    
+        			$(this).css("background-color","#FFFFFF");
+        		})
+        
+        	var infoStatus=0
+        	$("[name='infoButton']").css("color", "#0000FF");
+        	$("[name='info']").css("display", "none");
+        
+        	$("[name='infoButton']").click(function(){
+        		if(infoStatus==1){
+        			$("[name='info']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='info']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		infoStatus=1-infoStatus;
+        	});
+         
+        	var remarkStatus=1
+        	$("[name='remarkButton']").css("color", "#FF0000");
+        	$("[name='remarkButton']").click(function(){
+        		if(remarkStatus==1){
+        			$("[class='remark']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[class='remark']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		remarkStatus=1-remarkStatus;
+        	});
+    
+        	var imageStatus=1
+        	$("[name='imageButton']").css("color", "#FF0000");
+        	$("[name='imageButton']").click(function(){
+        		if(imageStatus==1){
+        			$("[name='image']").fadeOut();
+        			$(this).css("color", "#0000FF");
+        		}
+        		else{
+        			$("[name='image']").fadeIn();
+        			$(this).css("color", "#FF0000");
+        		}
+        		imageStatus=1-imageStatus;
+        	});
+         
+        });
+    </script>
+    
+		
+    <p style="font-size:18pt">SequenceFile
+        <font style="font-size:10pt;color:red">&nbsp;&nbsp;&nbsp;&nbsp;incomplete</font>
+    </p>
+    <table width="100%" style="border-style:none">
+        <tr>
+            <td style="border-style:none;text-align:left;vertical-align:top">
+                <font style="font-size:10pt">SequenceFile</font>
+            </td>
+            <td style="border-style:none;text-align:right;vertical-align:top">
+                <a href="#" name="infoButton">
+                    info
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="remarkButton">
+                    remark
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#" name="imageButton">
+                    image
+                </a>
+            </td>
+        </tr>
+    </table>
+    <hr />
+    
+	<style type="text/css">
+        img {border-style:dotted;border-width:1px;box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5)}
+        .infoTable_1 {border-style:none;text-align:right;vertical-align:top;background-color:#FFEEFF}
+        .infoTable_2 {border-style:none;text-align:left;vertical-align:top;background-color:#FFEEFF}
+        .indent {border-style:none}
+        .k {border-style:none;text-align:left;vertical-align:top}
+        .v {border-style:none;text-align:left;vertical-align:top}
+        .r {border-style:none;text-align:left;vertical-align:top}
+	</style>
+    <div name="info">
+        <table width="100%" style="border-style:none">
+            <tr>
+                <td class="infoTable_1">Description:</td>
+                <td class="infoTable_2" width="100%">SequenceFile</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Status:</td>
+                <td class="infoTable_2">incomplete</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Tags:</td>
+                <td class="infoTable_2">SequenceFile</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">Author:</td>
+                <td class="infoTable_2">Josh.Li</td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">CreateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+            <tr>
+                <td class="infoTable_1">UpdateDate:</td>
+                <td class="infoTable_2"></td>
+            </tr>
+        </table>
+    </div>
+    
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+				</td>
+				<td class="k">
+					<b>Program</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Write</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					<pre>package com.acer.api;
+<br />
+<br />import java.io.IOException;
+<br />import java.net.URI;
+<br />
+<br />import org.apache.hadoop.conf.Configuration;
+<br />import org.apache.hadoop.fs.FileSystem;
+<br />import org.apache.hadoop.fs.Path;
+<br />import org.apache.hadoop.io.IOUtils;
+<br />import org.apache.hadoop.io.IntWritable;
+<br />import org.apache.hadoop.io.SequenceFile;
+<br />import org.apache.hadoop.io.Text;
+<br />
+<br />public class SequenceFileWriteDemo {
+<br /> private static final String[] DATA = {"1", "2", "3", "4"};
+<br /> 
+<br /> public static void main(String[] args) throws IOException{
+<br />  String fsName = "hdfs://10.24.100.136:9000";
+<br />  String uri = "/tmp/seqDemo";
+<br />  
+<br />  Configuration conf = new Configuration();
+<br />  FileSystem fs = FileSystem.get(URI.create(fsName), conf);
+<br />  Path path = new Path(uri);
+<br />  IntWritable key = new IntWritable();
+<br />  Text value = new Text();
+<br />  
+<br />  SequenceFile.Writer writer = null;
+<br />  try{
+<br />   writer = SequenceFile.createWriter(fs, conf, path, key.getClass(), value.getClass());
+<br />   for(int i=0;i&lt;100;i++){
+<br />    key.set(100-i);
+<br />    value.set(DATA[i%DATA.length]);
+<br />    System.out.printf("[%s]\t%s\t%s\n", writer.getLength(), key, value);
+<br />    writer.append(key, value);
+<br />   }
+<br />  }
+<br />  finally{
+<br />   IOUtils.closeStream(writer);
+<br />  }
+<br />  
+<br /> }
+<br />}</pre>
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Read</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					package com.acer.api;
+<br />
+<br />import java.io.IOException;
+<br />import java.net.URI;
+<br />
+<br />import org.apache.hadoop.conf.Configuration;
+<br />import org.apache.hadoop.fs.FileSystem;
+<br />import org.apache.hadoop.fs.Path;
+<br />import org.apache.hadoop.io.IOUtils;
+<br />import org.apache.hadoop.io.SequenceFile;
+<br />import org.apache.hadoop.io.Writable;
+<br />import org.apache.hadoop.util.ReflectionUtils;
+<br />
+<br />public class SequenceFileReadDemo {
+<br /> public static void main(String[] args) throws IOException{
+<br />  String fsName = "hdfs://10.24.100.136:9000";
+<br />  String pathName = "/tmp/seqDemo";
+<br />  Configuration conf = new Configuration();
+<br />  FileSystem fs = FileSystem.get(URI.create(fsName), conf);
+<br />  Path path = new Path(pathName);
+<br />  
+<br />  SequenceFile.Reader reader = null;
+<br />  try{
+<br />   reader = new SequenceFile.Reader(fs, path, conf);
+<br />   Writable key = (Writable)ReflectionUtils.newInstance(reader.getKeyClass(), conf);
+<br />   Writable value = (Writable)ReflectionUtils.newInstance(reader.getValueClass(), conf);
+<br />   long position = reader.getPosition();
+<br />   while(reader.next(key, value)){
+<br />    String syncSeen = reader.syncSeen()? "*" : "";
+<br />    System.out.printf("[%s%s]\t%s\t%s\n", position, syncSeen, key, value);
+<br />    position = reader.getPosition();
+<br />   }
+<br />  }
+<br />  finally{
+<br />   IOUtils.closeStream(reader);
+<br />  }
+<br />  
+<br /> }
+<br />}
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Sort</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop jar $HADOOP_HOME/hadoop-examples-1.1.1.jar sort \
+<br />-r 1 \
+<br />-inFormat org.apache.hadoop.mapred.SequenceFileInputFormat \
+<br />-outFormat org.apache.hadoop.mapred.SequenceFileOutputFormat \
+<br />-outKey org.apache.hadoop.io.IntWritable \
+<br />-outValue org.apache.hadoop.io.Text \
+<br />/tmp/seqDemo \
+<br />/tmp/seqDemoSorted
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<b>Text</b>
+				</td>
+				<td class="v">
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+		<table style="border-style:none;">
+			<tr>
+				<td class="indent">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</td>
+				<td class="k">
+					<font color="red">*</font>
+				</td>
+				<td class="v">
+					hadoop fs -text /tmp/seqDemoSorted/part-00000 |head
+				</td>
+				<td class="r">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

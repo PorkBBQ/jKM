@@ -1,0 +1,415 @@
+<html>
+	<head>
+<META http-equiv="Content-Type" content="text/html; charset=big5"> 	</head>
+	<body>
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js">
+		</script>
+
+        		<object type="text/site properties">
+        			<param name="Window Styles" value="0x800025">
+        			</param>
+        			<param name="Font" value="Arial Unicode MS,8,0">
+        			</param>
+        		</object>
+        		<ul>
+<li> <object type="text/sitemap">
+			<param name="name" value="Tweets - acer">
+			</param>
+			<param name="Local" value="_cover.html">
+			</param>
+</object>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Statistics">
+				</param>
+				<param name="Local" value="stats.html">
+				</param>
+</object>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Daily Distribution">
+				</param>
+				<param name="Local" value="daily.html">
+				</param>
+</object>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Grographic Distribution">
+				</param>
+				<param name="Local" value="geoMap.html">
+				</param>
+</object>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Grographic Distribution - clustered">
+					</param>
+					<param name="Local" value="geoMapCluster.html">
+					</param>
+</object>
+				</ul>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Summary">
+				</param>
+				<param name="Local" value="summary.html">
+				</param>
+</object>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Frequency Statistics">
+				</param>
+				<param name="Local" value="freqs.html">
+				</param>
+</object>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Languages">
+					</param>
+					<param name="Local" value="lang.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Sources">
+					</param>
+					<param name="Local" value="source.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="HashTags">
+					</param>
+					<param name="Local" value="hashtags.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Mentioned User Name">
+					</param>
+					<param name="Local" value="mentions_name.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Domains">
+					</param>
+					<param name="Local" value="domains.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Display Domains">
+					</param>
+					<param name="Local" value="display_domains.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Favorate Count">
+					</param>
+					<param name="Local" value="favorite_count.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Retweet Count">
+					</param>
+					<param name="Local" value="retweet_count.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="User Id Count">
+					</param>
+					<param name="Local" value="user_id.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="User Favorate Count">
+					</param>
+					<param name="Local" value="user_favourites_count.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="User Follower Count">
+					</param>
+					<param name="Local" value="user_followers_count.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="User Friends Count">
+					</param>
+					<param name="Local" value="user_friends_count.html">
+					</param>
+</object>
+				</ul>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Trends">
+				</param>
+				<param name="Local" value="trends.html">
+				</param>
+</object>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Hashtags Trend">
+					</param>
+					<param name="Local" value="hashtagsTrend.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Keywords Trend">
+					</param>
+					<param name="Local" value="keywordsTrend.html">
+					</param>
+</object>
+				</ul>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Classifications">
+				</param>
+				<param name="Local" value="classify.html">
+				</param>
+</object>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Text Analysis">
+				</param>
+				<param name="Local" value="ta.html">
+				</param>
+</object>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Word Count">
+					</param>
+					<param name="Local" value="wordCount.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="TF-IDF Hierachical Cluster">
+					</param>
+					<param name="Local" value="tfidfClusterHeir.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="TF-IDF Text Comparison">
+					</param>
+					<param name="Local" value="tfidfText.html">
+					</param>
+</object>
+				</ul>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Apriori">
+					</param>
+					<param name="Local" value="apriori.html">
+					</param>
+</object>
+				</ul>
+			</ul>
+			<ul>
+<li> <object type="text/sitemap">
+				<param name="name" value="Appendix">
+				</param>
+				<param name="Local" value="appendix.html">
+				</param>
+</object>
+				<ul>
+<li> <object type="text/sitemap">
+					<param name="name" value="Users">
+					</param>
+					<param name="Local" value="users.html">
+					</param>
+</object>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1685288216">
+						</param>
+						<param name="Local" value="1685288216.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="178338718">
+						</param>
+						<param name="Local" value="178338718.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="404375832">
+						</param>
+						<param name="Local" value="404375832.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="332305211">
+						</param>
+						<param name="Local" value="332305211.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="854013841">
+						</param>
+						<param name="Local" value="854013841.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1553705328">
+						</param>
+						<param name="Local" value="1553705328.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="582695581">
+						</param>
+						<param name="Local" value="582695581.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1141069646">
+						</param>
+						<param name="Local" value="1141069646.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="2153252576">
+						</param>
+						<param name="Local" value="2153252576.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="379534850">
+						</param>
+						<param name="Local" value="379534850.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="39714336">
+						</param>
+						<param name="Local" value="39714336.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1692321918">
+						</param>
+						<param name="Local" value="1692321918.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="99878596">
+						</param>
+						<param name="Local" value="99878596.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1325720106">
+						</param>
+						<param name="Local" value="1325720106.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="318691855">
+						</param>
+						<param name="Local" value="318691855.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1081299212">
+						</param>
+						<param name="Local" value="1081299212.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1645709802">
+						</param>
+						<param name="Local" value="1645709802.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1916928024">
+						</param>
+						<param name="Local" value="1916928024.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="113416208">
+						</param>
+						<param name="Local" value="113416208.html">
+						</param>
+</object>
+					</ul>
+					<ul>
+<li> <object type="text/sitemap">
+						<param name="name" value="1718993528">
+						</param>
+						<param name="Local" value="1718993528.html">
+						</param>
+</object>
+					</ul>
+				</ul>
+			</ul>
+		</ul>
+	</body>
+</html>
